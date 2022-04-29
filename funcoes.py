@@ -48,3 +48,18 @@ def sorteia_letra(palavra, restricao): #Rafa
         return ""
     else:
         return random.choice(list(palavra_tratada))
+    
+def montando_loja(pais, dados):
+    infos = dados[pais]
+    loja = {}
+
+    loja['continente'] = True
+    loja['população'] = True
+    loja['área'] = True
+    loja['capital'] = len(infos['capital'])
+    loja['bandeira'] = 0
+    for cor, quantidade in infos['bandeira']:
+        if quantidade > 0 and cor != "outras":
+            loja['bandeira'] += 1
+    
+    return loja
