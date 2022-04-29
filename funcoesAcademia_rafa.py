@@ -3,11 +3,10 @@ import random, math
 def normaliza(dados):
     dados_normalizados = {}
     for continente, paises in dados.items():
-        for nome, dados in paises.items():
-            dados_normalizados[nome] = dados
+        for nome, infos in paises.items():
+            dados_normalizados[nome] = infos
             dados_normalizados[nome]['continente'] = continente
     return dados_normalizados
-
 
 def sorteia_pais(dados):
     pais = random.choice(list(dados.keys()))
@@ -46,10 +45,10 @@ def esta_na_lista(pais, lista):
     return False
 
 def sorteia_letra(palavra, restricao):
-    restricao_caracters = ['.', ',', '-', ';', ' '] + restricao
+    restricao_caracteres = ['.', ',', '-', ';', ' '] + restricao
 
     palavra_tratada = str(palavra).lower()
-    for caracter in restricao_caracters:
+    for caracter in restricao_caracteres:
         palavra_tratada = palavra_tratada.replace(caracter, "")
     if len(palavra_tratada) < 1:
         return ""
