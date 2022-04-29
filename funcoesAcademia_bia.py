@@ -1,5 +1,12 @@
-import random
-import math
+import random, math
+
+def normaliza(porContinente):
+    saida = {}
+    for continente,paises in porContinente.items():
+        for pais,info in paises.items():
+            info['continente'] = continente
+            saida[pais] = info
+    return saida
 
 def sorteia_pais(dicionario):
     paises = []
