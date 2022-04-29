@@ -1,5 +1,12 @@
-import random
-import math
+import random, math
+
+def normaliza(porContinente):
+    saida = {}
+    for continente,paises in porContinente.items():
+        for pais,info in paises.items():
+            info['continente'] = continente
+            saida[pais] = info
+    return saida
 
 def sorteia_pais(dicionario):
     paises = []
@@ -9,7 +16,7 @@ def sorteia_pais(dicionario):
     return sorteado    
 
 def haversine(r,l1, long1, l2, long2):
-    
+
     a = (math.sin((math.radians(l2)-math.radians(l1))/2))**2
     b = (math.sin((math.radians(long2)-math.radians(long1))/2))**2
     c = math.cos(math.radians(l1))*math.cos(math.radians(l2))*b
@@ -49,4 +56,6 @@ def esta_na_lista(pais,lista):
             esta = True
         i += 1
     return esta
+
+
 
