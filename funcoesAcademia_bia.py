@@ -8,10 +8,11 @@ def sorteia_pais(dicionario):
     sorteado = random.choice(paises)
     return sorteado    
 
-def haversine(r,φ1, λ1, φ2, λ2):
-    a = (math.sin((math.radians(φ2)-math.radians(φ1))/2))**2
-    b = (math.sin((math.radians(λ2)-math.radians(λ1))/2))**2
-    c = math.cos(math.radians(φ1))*math.cos(math.radians(φ2))*b
+def haversine(r,l1, long1, l2, long2):
+    
+    a = (math.sin((math.radians(l2)-math.radians(l1))/2))**2
+    b = (math.sin((math.radians(long2)-math.radians(long1))/2))**2
+    c = math.cos(math.radians(l1))*math.cos(math.radians(l2))*b
     d = 2*r*math.asin((a+c)**(1/2))
     return d
 
