@@ -23,8 +23,6 @@ while statusJogo:
                     statusJogo = True
                 else:
                     statusJogo = False
-            else:
-                print('país incorreto')
                 
         elif jogada == 'comprar dica':
             tipo = input('Escolha uma categoria')
