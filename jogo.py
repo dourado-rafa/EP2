@@ -23,7 +23,7 @@ while statusJogo:
             if jogada in dadosPaises.keys():
                 tentativas -= 1
                 paisTestado = dadosPaises[jogada]
-                
+
                 if jogada == pais:
                     print('Você venceu')
                     statusJogando = False
