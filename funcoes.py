@@ -49,8 +49,7 @@ def sorteia_letra(palavra, restricao): #Rafa
     else:
         return random.choice(list(palavra_tratada))
     
-def montando_loja(pais, dados):
-    infos = dados[pais]
+def montando_loja(pais, infosPais):
     loja = {}
 
     loja['Continente'] = True
@@ -58,24 +57,40 @@ def montando_loja(pais, dados):
     loja['Área'] = True
     loja['Letra da capital'] = []
     loja['Cor da bandeira'] = []
-    for cor, quantidade in infos['Cor da bandeira']:
+    for cor, quantidade in infosPais['bandeira'].items():
         if quantidade > 0 and cor != "outras":
             loja['Cor da bandeira'].append(cor)
     
     return loja
 
-def menuDicas (loja):
-    mostra = {}
+def menuDicas (infosPais,loja,tentativas):
+    menu = ''
     n = 0
 
-    if len(loja['Cor da bandeira']) > 0: 
-        mostra['Cor da bandeira'] = 4
-    #if len('Letra da Capital') < len()
-    
-    
-    # 1.Cor da bandeira - custa 4 tentativas
-    # 2.Letra da capital - custa 3 tentativas
-    # 3.Área - custa 6 tentativas
-    # 4.População - custa 5 tentativas
-    # 5.Continente - custa 7 tentativas
-    # 0.Sem dica
+    if len(loja['Cor da bandeira']) > 0:
+        custo = 4
+        if custo <= tentativas:
+            n += 1
+            menu += ('{}. Cor da bandeira - custa {} tentativas\n'.format(n,custo))
+    if len(loja['Letra da capital']) < len(infosPais['capital']):
+        custo = 3
+        if custo <= tentativas:
+            n += 1
+            menu += ('{}. Letra da Capital - custa {} tentativas\n'.format(n,custo))
+    if loja['Área']:
+        custo = 6
+        if custo <= tentativas:
+            n += 1
+            menu += ('{}. Área - custa {} tentativas\n'.format(n,custo))
+    if loja['População']:
+        custo = 5
+        if custo <= tentativas:
+            n += 1
+            menu += ('{}. População - custa {} tentativas\n'.format(n,custo))
+    if loja['Continente']:
+        custo = 7
+        if custo <= tentativas:
+            n += 1
+            menu += ('{}. Continente - custa {} tentativas\n'.format(n,custo))
+    menu += ('0. Sem dica')
+    return menu

@@ -38,7 +38,3 @@ while statusJogo:
                     # adiciona_em_ordem(jogada, distancia, paisesTestados)
             else:
                 print('País desconhecido')
-
-
-
-                
