@@ -52,13 +52,29 @@ def sorteia_letra(palavra, restricao): #Rafa
 def montando_loja(pais, infos):
     loja = {}
 
-    loja['continente'] = True
-    loja['população'] = True
-    loja['área'] = True
-    loja['capital'] = len(infos['capital'])
-    loja['bandeira'] = []
-    for cor, quantidade in infos['bandeira']:
+    loja['Continente'] = True
+    loja['População'] = True
+    loja['Área'] = True
+    loja['Letra da capital'] = []
+    loja['Cor da bandeira'] = []
+    for cor, quantidade in infos['Cor da bandeira']:
         if quantidade > 0 and cor != "outras":
-            loja['bandeira'].append(cor)
+            loja['Cor da bandeira'].append(cor)
     
     return loja
+
+def menuDicas (loja):
+    mostra = {}
+    n = 0
+
+    if len(loja['Cor da bandeira']) > 0: 
+        mostra['Cor da bandeira'] = 4
+    #if len('Letra da Capital') < len()
+    
+    
+    # 1.Cor da bandeira - custa 4 tentativas
+    # 2.Letra da capital - custa 3 tentativas
+    # 3.Área - custa 6 tentativas
+    # 4.População - custa 5 tentativas
+    # 5.Continente - custa 7 tentativas
+    # 0.Sem dica
