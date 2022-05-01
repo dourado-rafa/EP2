@@ -49,7 +49,8 @@ def sorteia_letra(palavra, restricao): #Rafa
     else:
         return random.choice(list(palavra_tratada))
     
-def montando_loja(pais, infos):
+def montando_loja(pais, dados):
+    infos = dados[pais]
     loja = {}
 
     loja['Continente'] = True
