@@ -21,25 +21,25 @@ while statusJogo:
         if jogada == 'dica':
             dicas, tentativas, loja = menu_dicas(infosPais, loja, tentativas, dicas)
                 
-        else:
+        elif jogada in dadosPaises.keys():
             paisTestado = dadosPaises[jogada]
+            tentativas -= 1
 
-            if jogada in dadosPaises.keys():
-                tentativas -= 1
-
-                if jogada == pais:
-                    print('Você venceu')
-                    statusJogando = False
-                    reiniciar = input('Você quer jogar novamente? ')
-                    if reiniciar == 'sim':
-                        statusJogo = True
-                    else:
-                        statusJogo = False
-
+            if jogada == pais:
+                print('Você venceu')
+                statusJogando = False
+                reiniciar = input('Você quer jogar novamente? ')
+                if reiniciar == 'sim':
+                    statusJogo = True
                 else:
-                    distancia = haversine(infosPais, paisTestado)
-                    paisesTestados = adiciona_em_ordem(jogada, distancia, paisesTestados)
+                    statusJogo = False
+
             else:
-                print('País desconhecido')
+                distancia = haversine(infosPais, paisTestado)
+                paisesTestados = adiciona_em_ordem(jogada, distancia, paisesTestados)
+
+        else:
+            print('País desconhecido')
+            
         exibe_infos(paisesTestados, tentativas, dicas)
                 
