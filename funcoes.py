@@ -79,7 +79,7 @@ def montando_loja(infosPais):
 def menu_dicas(infosPais, loja, tentativas, dicas):
     menu = ''
     n = 0
-    opcoesNome = []
+    opcoesNome = ['sem dica']
 
     if len(loja['Cor da bandeira']) > 0:
         custo = 4
@@ -126,33 +126,33 @@ def menu_dicas(infosPais, loja, tentativas, dicas):
         print('Esse número não é válido')
         opcao = int(input('Escolha sua opção [{}]'.format(numeros)))
 
-    if opcoesNome[opcao -1] == 'Cor da bandeira':
+    if opcoesNome[opcao] == 'Cor da bandeira':
         tentativas -= 4
         cor = random.choice(loja['Cor da bandeira'])
         loja['Cor da bandeira'].remove(cor)
         dicas['Cor da bandeira'].append(cor)
 
-    elif opcoesNome[opcao -1] == 'Letra da capital':
+    elif opcoesNome[opcao] == 'Letra da capital':
         tentativas -= 3
         letra = sorteia_letra(infosPais['capital'],loja['Letra da capital'])
         loja['Letra da capital'].append(letra)
     
-    elif opcoesNome[opcao -1] == 'Área':
+    elif opcoesNome[opcao] == 'Área':
         tentativas -= 6
         loja['Área'] = False
         dicas['Área'] = infosPais['area']
     
-    elif opcoesNome[opcao -1] == 'População':
+    elif opcoesNome[opcao] == 'População':
         tentativas -= 5
         loja['População'] = False
         dicas['População'] = infosPais['populacao']
     
-    elif opcoesNome[opcao -1] == 'Continente':
+    elif opcoesNome[opcao] == 'Continente':
         tentativas -= 7
         loja['Continente'] = False
         dicas['Continente'] = infosPais['continente']
     
-    return dicas
+    return dicas,tentativas,loja
 
 def exibe_infos(paisesTestados, tentativas, dicas):
     print("\nDistâncias:")

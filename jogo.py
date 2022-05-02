@@ -19,7 +19,7 @@ while statusJogo:
         jogada = input('Qual seu palpite? ').lower()
 
         if jogada == 'dica':
-            menu_dicas(infosPais, loja, tentativas, dicas)
+            dicas, tentativas, loja = menu_dicas(infosPais, loja, tentativas, dicas)
                 
         else:
             paisTestado = dadosPaises[jogada]
