@@ -152,3 +152,13 @@ def menuDicas (infosPais,loja,tentativas,dicas):
         dicas['Continente'] = infosPais['continente']
     
     return dicas
+
+def exibe_infos(paisesTestados, tentativas, dicas):
+    print("\nDistâncias:")
+    for pais in paisesTestados:
+        distancia = f"{int(pais[1]):,}".replace(',', '.')
+        print(f"    {distancia} km -> {pais[0]}")
+    print("\nDicas:")
+    for dica, valor in dicas.items():
+        print(f"    {dica}: {valor}")
+    print(f"\nVocê tem {tentativas} tentativa (s)")
