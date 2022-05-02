@@ -21,10 +21,10 @@ def normaliza(porContinente): #Bia
 #     return d
 
 def haversine(pais, paisTestado): #Bia
-    l1 = math.radians(paisTestado['latitude'])
-    long1 = math.radians(paisTestado['longitude'])
-    l2 = math.radians(pais['latitude'])
-    long2 = math.radians(pais['longitude'])
+    l1 = math.radians(paisTestado['geo']['latitude'])
+    long1 = math.radians(paisTestado['geo']['longitude'])
+    l2 = math.radians(pais['geo']['latitude'])
+    long2 = math.radians(pais['geo']['longitude'])
     raio = 6371
 
     a = (math.sin((l2-l1)/2))**2
@@ -62,7 +62,7 @@ def sorteia_letra(palavra, restricao): #Rafa
     else:
         return random.choice(list(palavra_tratada))
     
-def montando_loja(pais, infosPais):
+def montando_loja(infosPais):
     loja = {}
 
     loja['Continente'] = True
@@ -76,7 +76,7 @@ def montando_loja(pais, infosPais):
     
     return loja
 
-def menuDicas (infosPais,loja,tentativas,dicas):
+def menu_dicas(infosPais, loja, tentativas, dicas):
     menu = ''
     n = 0
     opcoesNome = []
@@ -112,41 +112,42 @@ def menuDicas (infosPais,loja,tentativas,dicas):
             opcoesNome.append('Continente')
             menu += ('{}. Continente - custa {} tentativas\n'.format(n,custo))
     menu += ('0. Sem dica')
+    print(menu)
 
     numeros = '0'
     i = 1
     while i <= n:
-        numeros += '/{}'.format(i)
+        numeros += '|{}'.format(i)
         i += 1
 
-    opcao = int(input('Escolha sua opção [{}]'.format(numeros)))
+    opcao = int(input('Escolha sua opção [{}] '.format(numeros)))
 
     while opcao > n:
         print('Esse número não é válido')
         opcao = int(input('Escolha sua opção [{}]'.format(numeros)))
 
-    if opcoesNome[opcao] == 'Cor da bandeira':
+    if opcoesNome[opcao -1] == 'Cor da bandeira':
         tentativas -= 4
         cor = random.choice(loja['Cor da bandeira'])
         loja['Cor da bandeira'].remove(cor)
         dicas['Cor da bandeira'].append(cor)
 
-    elif opcoesNome[opcao] == 'Letra da capital':
+    elif opcoesNome[opcao -1] == 'Letra da capital':
         tentativas -= 3
         letra = sorteia_letra(infosPais['capital'],loja['Letra da capital'])
         loja['Letra da capital'].append(letra)
     
-    elif opcoesNome[opcao] == 'Área':
+    elif opcoesNome[opcao -1] == 'Área':
         tentativas -= 6
         loja['Área'] = False
         dicas['Área'] = infosPais['area']
     
-    elif opcoesNome[opcao] == 'População':
+    elif opcoesNome[opcao -1] == 'População':
         tentativas -= 5
         loja['População'] = False
         dicas['População'] = infosPais['populacao']
     
-    elif opcoesNome[opcao] == 'Continente':
+    elif opcoesNome[opcao -1] == 'Continente':
         tentativas -= 7
         loja['Continente'] = False
         dicas['Continente'] = infosPais['continente']

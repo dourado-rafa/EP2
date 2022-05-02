@@ -12,17 +12,20 @@ while statusJogo:
     paisesTestados = []
     statusJogando = True
 
-    loja = montando_loja(pais, infosPais)
+    loja = montando_loja(infosPais)
+    dicas = {}
 
     while tentativas > 0 and statusJogando:
         jogada = input('Qual seu palpite? ').lower()
+
         if jogada == 'dica':
-            input("W.I.P.")
+            menu_dicas(infosPais, loja, tentativas, dicas)
                 
         else:
+            paisTestado = dadosPaises[jogada]
+
             if jogada in dadosPaises.keys():
                 tentativas -= 1
-                paisTestado = dadosPaises[jogada]
 
                 if jogada == pais:
                     print('Você venceu')
@@ -32,10 +35,11 @@ while statusJogo:
                         statusJogo = True
                     else:
                         statusJogo = False
+
                 else:
-                    input("W.I.P.")
                     distancia = haversine(infosPais, paisTestado)
-                    adiciona_em_ordem(jogada, distancia, paisesTestados)
+                    paisesTestados = adiciona_em_ordem(jogada, distancia, paisesTestados)
             else:
                 print('País desconhecido')
+        exibe_infos(paisesTestados, tentativas, dicas)
                 
