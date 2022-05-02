@@ -12,12 +12,25 @@ def normaliza(porContinente): #Bia
             saida[pais] = info
     return saida
 
-def haversine(r,l1, long1, l2, long2): #Bia
+# def haversine(r,l1, long1, l2, long2): #Bia
     
-    a = (math.sin((math.radians(l2)-math.radians(l1))/2))**2
-    b = (math.sin((math.radians(long2)-math.radians(long1))/2))**2
-    c = math.cos(math.radians(l1))*math.cos(math.radians(l2))*b
-    d = 2*r*math.asin((a+c)**(1/2))
+#     a = (math.sin((math.radians(l2)-math.radians(l1))/2))**2
+#     b = (math.sin((math.radians(long2)-math.radians(long1))/2))**2
+#     c = math.cos(math.radians(l1))*math.cos(math.radians(l2))*b
+#     d = 2*r*math.asin((a+c)**(1/2))
+#     return d
+
+def haversine(pais, paisTestado): #Bia
+    l1 = math.radians(paisTestado['latitude'])
+    long1 = math.radians(paisTestado['longitude'])
+    l2 = math.radians(pais['latitude'])
+    long2 = math.radians(pais['longitude'])
+    raio = 6371
+
+    a = (math.sin((l2-l1)/2))**2
+    b = (math.sin((long2-long1)/2))**2
+    c = math.cos(l1)*math.cos(l2)*b
+    d = 2*raio*math.asin((a+c)**(1/2))
     return d
 
 def esta_na_lista(pais, lista): #Rafa

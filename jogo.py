@@ -34,7 +34,8 @@ while statusJogo:
                         statusJogo = False
                 else:
                     input("W.I.P.")
-                    # distancia = haversine(pais, paisTestado)
-                    # adiciona_em_ordem(jogada, distancia, paisesTestados)
+                    distancia = haversine(infosPais, paisTestado)
+                    adiciona_em_ordem(jogada, distancia, paisesTestados)
             else:
                 print('País desconhecido')
+                
