@@ -117,7 +117,7 @@ def menu_dicas(infosPais, loja, tentativas, dicas):
     menu += ('0. Sem dica')
     print(menu)
 
-    lista_numeros = []
+    lista_numeros = ['0']
     numeros = '0'
     i = 1
     while i <= n:
@@ -131,9 +131,9 @@ def menu_dicas(infosPais, loja, tentativas, dicas):
         tentativas -= 4
         cor = random.choice(loja['Cor da bandeira'])
         loja['Cor da bandeira'].remove(cor)
-        if 'Cor da bandeira' not in dicas.keys():
-            dicas['Cor da bandeira'] = []
-        dicas['Cor da bandeira'].append(cor)
+        if 'Cores da bandeira' not in dicas.keys():
+            dicas['Cores da bandeira'] = []
+        dicas['Cores da bandeira'].append(cor)
 
     elif opcoesNome[opcao] == 'Letra da capital':
         tentativas -= 3
