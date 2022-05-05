@@ -185,3 +185,13 @@ def exibe_infos(paisesTestados, tentativas, dicas):
         corTentativa = cores['ciano']
 
     print(f"\n Você tem {corTentativa}{tentativas}{cores['reset']} tentativa (s)")
+
+def verifica(pergunta,respostas):
+    jogada = input(pergunta)
+    
+    while jogada:
+        if jogada in respostas:
+            return jogada
+        else:
+            print('Resposta inválida')
+            jogada = input(pergunta)
