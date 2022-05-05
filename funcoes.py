@@ -1,5 +1,7 @@
 import random, math
 
+cores = {'ciano': '\x1b[1;36m', 'verde': '\x1b[1;32m', 'amarelo': '\x1b[1;33m', 'magenta': '\x1b[1;35m', 'vermelho': '\x1b[1;31m'}
+
 def sorteia_pais(dados): #Rafa
     pais = random.choice(list(dados.keys()))
     return pais
