@@ -117,17 +117,15 @@ def menu_dicas(infosPais, loja, tentativas, dicas):
     menu += ('0. Sem dica')
     print(menu)
 
+    lista_numeros = []
     numeros = '0'
     i = 1
     while i <= n:
         numeros += '|{}'.format(i)
+        lista_numeros.append(str(i))
         i += 1
 
-    opcao = int(input('Escolha sua opção [{}] '.format(numeros)))
-
-    while opcao > n:
-        print('Esse número não é válido')
-        opcao = int(input('Escolha sua opção [{}]'.format(numeros)))
+    opcao = int(verifica(('Escolha sua opção [{}] '.format(numeros)),lista_numeros))
 
     if opcoesNome[opcao] == 'Cor da bandeira':
         tentativas -= 4
@@ -188,7 +186,7 @@ def exibe_infos(paisesTestados, tentativas, dicas):
 
 def verifica(pergunta,respostas):
     jogada = input(pergunta)
-    
+
     while jogada:
         if jogada in respostas:
             return jogada
