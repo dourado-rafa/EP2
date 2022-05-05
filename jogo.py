@@ -38,7 +38,7 @@ while statusJogo:
             exibe_infos(paisesTestados, tentativas, dicas)
 
         elif jogada == 'desisto':
-            desistir = input("Tem certeza que deseja desistir da rodada? [s|n] ")
+            desistir = verifica("Tem certeza que deseja desistir da rodada? [s|n] ",['s','n'])
             statusJogando = (desistir == 'n')
             print(f"Que deselegante desistir, o país era: {pais}")
 
@@ -55,7 +55,7 @@ while statusJogo:
             if jogada == pais:
                 print('Você venceu')
                 statusJogando = False
-                reiniciar = input('Você quer jogar novamente? [s|n] ')
+                reiniciar = verifica('Você quer jogar novamente? [s|n] ',['s','n'])
                 statusJogo = (reiniciar == 's')
 
             else:

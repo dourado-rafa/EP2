@@ -131,13 +131,18 @@ def menu_dicas(infosPais, loja, tentativas, dicas):
         tentativas -= 4
         cor = random.choice(loja['Cor da bandeira'])
         loja['Cor da bandeira'].remove(cor)
+        if 'Cor da bandeira' not in dicas.keys():
+            dicas['Cor da bandeira'] = []
         dicas['Cor da bandeira'].append(cor)
 
     elif opcoesNome[opcao] == 'Letra da capital':
         tentativas -= 3
         letra = sorteia_letra(infosPais['capital'],loja['Letra da capital'])
         loja['Letra da capital'].append(letra)
-    
+        if 'Letras da capital' not in dicas.keys():
+            dicas['Letras da capital'] = []
+        dicas['Letras da capital'].append(letra)
+            
     elif opcoesNome[opcao] == 'Área':
         tentativas -= 6
         loja['Área'] = False
@@ -185,11 +190,11 @@ def exibe_infos(paisesTestados, tentativas, dicas):
     print(f"\n Você tem {corTentativa}{tentativas}{cores['reset']} tentativa (s)")
 
 def verifica(pergunta,respostas):
-    jogada = input(pergunta)
+    jogada = (input(pergunta)).lower()
 
     while jogada:
         if jogada in respostas:
             return jogada
         else:
             print('Resposta inválida')
-            jogada = input(pergunta)
+            jogada = (input(pergunta)).lower()
