@@ -1,6 +1,7 @@
+from cgitb import reset
 import random, math
 
-cores = {'ciano': '\x1b[1;36m', 'verde': '\x1b[1;32m', 'amarelo': '\x1b[1;33m', 'magenta': '\x1b[1;35m', 'vermelho': '\x1b[1;31m'}
+cores = {'ciano': '\x1b[1;36m', 'verde': '\x1b[1;32m', 'amarelo': '\x1b[1;33m', 'magenta': '\x1b[1;35m', 'vermelho': '\x1b[1;31m', 'reset': '\x1b[0m'}
 
 def sorteia_pais(dados): #Rafa
     pais = random.choice(list(dados.keys()))
@@ -159,9 +160,28 @@ def menu_dicas(infosPais, loja, tentativas, dicas):
 def exibe_infos(paisesTestados, tentativas, dicas):
     print("\nDistâncias:")
     for pais in paisesTestados:
-        distancia = f"{int(pais[1]):,}".replace(',', '.')
-        print(f"    {distancia} km -> {pais[0]}")
+        distancia = int(pais[1])
+        if distancia <= 1000:
+            cor = cores['ciano']
+        elif distancia <= 2000:
+            cor = cores['verde']
+        elif distancia <= 5000:
+            cor = cores['amarelo']
+        elif distancia <= 10000:
+            cor = cores['magenta']
+        else:
+            cor = cores['vermelho']
+        distancia2 = f"{int(pais[1]):,}".replace(',', '.')
+
+        print(f"{cor}    {distancia2} km -> {pais[0]} {cores['reset']}")
     print("\nDicas:")
     for dica, valor in dicas.items():
         print(f"    {dica}: {valor}")
-    print(f"\nVocê tem {tentativas} tentativa (s)")
+    if tentativas <= 10:
+        corTentativa = cores['amarelo']
+    elif tentativas <= 5:
+        corTentativa = cores['vermelho']
+    else:
+        corTentativa = cores['ciano']
+
+    print(f"\n Você tem {corTentativa}{tentativas}{cores['reset']} tentativa (s)")
