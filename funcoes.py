@@ -66,56 +66,47 @@ def sorteia_letra(palavra, restricao): #Rafa
         return random.choice(list(palavra_tratada))
     
 def montando_loja(infosPais):
-    loja = {}
+    loja = {
+        'Letra da Capital': [],
+        'Cor da Bandeira': [],
+        'População': 1,
+        'Área': 1,
+        'Continente': 1,
+    }
 
-    loja['Continente'] = True
-    loja['População'] = True
-    loja['Área'] = True
-    loja['Letra da capital'] = []
-    loja['Cor da bandeira'] = []
     for cor, quantidade in infosPais['bandeira'].items():
         if quantidade > 0 and cor != "outras":
-            loja['Cor da bandeira'].append(cor)
+            loja['Cor da Bandeira'].append(cor)
     
     return loja
 
 def menu_dicas(infosPais, loja, tentativas, dicas):
-    menu = ''
+    opcoesNome = ['Sem dica']
+    custo = {'Letra da Capital': 3, 'Cor da Bandeira': 4, 'População': 5, 'Área': 6, 'Continente': 7}
     n = 0
-    opcoesNome = ['sem dica']
+    
+    for dica in loja.keys():
+        if dica == 'Letra da Capital':
+            if len(loja['Letra da Capital']) < len(infosPais['capital']):
+                if tentativas > 3:
+                    n += 1
+                    opcoesNome.append('Letra da Capital')
+                    print('1. Letra da Capital - custa 3 tentativas')
 
-    if len(loja['Cor da bandeira']) > 0:
-        custo = 4
-        if custo <= tentativas:
-            n += 1
-            opcoesNome.append('Cor da bandeira')
-            menu += ('{}. Cor da bandeira - custa {} tentativas\n'.format(n,custo))
-    if len(loja['Letra da capital']) < len(infosPais['capital']):
-        custo = 3
-        if custo <= tentativas:
-            n += 1
-            opcoesNome.append('Letra da capital')
-            menu += ('{}. Letra da Capital - custa {} tentativas\n'.format(n,custo))
-    if loja['Área']:
-        custo = 6
-        if custo <= tentativas:
-            n += 1
-            opcoesNome.append('Área')
-            menu += ('{}. Área - custa {} tentativas\n'.format(n,custo))
-    if loja['População']:
-        custo = 5
-        if custo <= tentativas:
-            n += 1
-            opcoesNome.append('População')
-            menu += ('{}. População - custa {} tentativas\n'.format(n,custo))
-    if loja['Continente']:
-        custo = 7
-        if custo <= tentativas:
-            n += 1
-            opcoesNome.append('Continente')
-            menu += ('{}. Continente - custa {} tentativas\n'.format(n,custo))
-    menu += ('0. Sem dica')
-    print(menu)
+        elif dica == 'Cor da Bandeira':
+            if len(loja['Cor da Bandeira']) > 0:
+                if tentativas > 4:
+                    n += 1
+                    opcoesNome.append('Cor da Bandeira')
+                    print('2. Cor da Bandeira  - custa 4 tentativas')
+
+        else:
+            if loja[dica] > 0:
+                if tentativas > custo[dica]:
+                    n += 1
+                    opcoesNome.append(dica)
+                    print(f'{n}. {dica}       - custa {custo[dica]} tentativas')
+    print('0. Sem dica')
 
     lista_numeros = ['0']
     numeros = '0'
@@ -127,36 +118,26 @@ def menu_dicas(infosPais, loja, tentativas, dicas):
 
     opcao = int(verifica(('Escolha sua opção [{}] '.format(numeros)),lista_numeros))
 
-    if opcoesNome[opcao] == 'Cor da bandeira':
-        tentativas -= 4
-        cor = random.choice(loja['Cor da bandeira'])
-        loja['Cor da bandeira'].remove(cor)
-        if 'Cores da bandeira' not in dicas.keys():
-            dicas['Cores da bandeira'] = []
-        dicas['Cores da bandeira'].append(cor)
+    if opcoesNome[opcao] != 'Sem dica':
+        tentativas -= custo[opcoesNome[opcao]]
 
-    elif opcoesNome[opcao] == 'Letra da capital':
-        tentativas -= 3
-        letra = sorteia_letra(infosPais['capital'],loja['Letra da capital'])
-        loja['Letra da capital'].append(letra)
-        if 'Letras da capital' not in dicas.keys():
-            dicas['Letras da capital'] = []
-        dicas['Letras da capital'].append(letra)
+        if opcoesNome[opcao] == 'Letra da Capital':
+            letra = sorteia_letra(infosPais['capital'],loja['Letra da Capital'])
+            loja['Letra da Capital'].append(letra)
+            if 'Letras da Capital' not in dicas.keys():
+                dicas['Letras da Capital'] = []
+            dicas['Letras da Capital'].append(letra)
             
-    elif opcoesNome[opcao] == 'Área':
-        tentativas -= 6
-        loja['Área'] = False
-        dicas['Área'] = infosPais['area']
-    
-    elif opcoesNome[opcao] == 'População':
-        tentativas -= 5
-        loja['População'] = False
-        dicas['População'] = infosPais['populacao']
-    
-    elif opcoesNome[opcao] == 'Continente':
-        tentativas -= 7
-        loja['Continente'] = False
-        dicas['Continente'] = infosPais['continente']
+        elif opcoesNome[opcao] == 'Cor da Bandeira':
+            cor = random.choice(loja['Cor da Bandeira'])
+            loja['Cor da Bandeira'].remove(cor)
+            if 'Cores da Bandeira' not in dicas.keys():
+                dicas['Cores da Bandeira'] = []
+            dicas['Cores da Bandeira'].append(cor)
+
+        else:
+            loja[opcoesNome[opcao]] = 0
+            dicas[opcoesNome[opcao]] = infosPais[opcoesNome[opcao].lower()]
     
     return dicas,tentativas,loja
 
@@ -181,7 +162,7 @@ def exibe_infos(paisesTestados, tentativas, dicas):
     print("\nDicas:")
     for dica, valor in dicas.items():
         print(f"    {dica}: ", end='')
-        if dica == 'Letras da capital' or dica == 'Cores da bandeira':
+        if dica == 'Letras da Capital' or dica == 'Cores da Bandeira':
             for subvalor in valor:
                 if subvalor == valor[-1]:
                     print(subvalor)

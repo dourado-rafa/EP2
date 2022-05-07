@@ -3,8 +3,8 @@ EARTH_RADIUS = 6371
 DADOS = {
   "asia": {
     "afeganistao": {
-      "area": 652230,
-      "populacao": 31390200,
+      "área": 652230,
+      "população": 31390200,
       "capital": "Cabul",
       "geo": {
         "latitude": 33.93911,
@@ -23,8 +23,8 @@ DADOS = {
       }
     },
     "arabia saudita": {
-      "area": 2149690,
-      "populacao": 34268528,
+      "área": 2149690,
+      "população": 34268528,
       "capital": "Riade",
       "geo": {
         "latitude": 23.885942,
@@ -43,8 +43,8 @@ DADOS = {
       }
     },
     "armenia": {
-      "area": 29743,
-      "populacao": 2957731,
+      "área": 29743,
+      "população": 2957731,
       "capital": "Erevan",
       "geo": {
         "latitude": 40.069099,
@@ -63,8 +63,8 @@ DADOS = {
       }
     },
     "azerbaijao": {
-      "area": 86600,
-      "populacao": 10023318,
+      "área": 86600,
+      "população": 10023318,
       "capital": "Baku",
       "geo": {
         "latitude": 40.143105,
@@ -83,8 +83,8 @@ DADOS = {
       }
     },
     "bahrein": {
-      "area": 765,
-      "populacao": 1501635,
+      "área": 765,
+      "população": 1501635,
       "capital": "Manama",
       "geo": {
         "latitude": 25.930414,
@@ -103,8 +103,8 @@ DADOS = {
       }
     },
     "bangladesh": {
-      "area": 147570,
-      "populacao": 167310838,
+      "área": 147570,
+      "população": 167310838,
       "capital": "Daca",
       "geo": {
         "latitude": 23.684994,
@@ -123,8 +123,8 @@ DADOS = {
       }
     },
     "brunei": {
-      "area": 5765,
-      "populacao": 433285,
+      "área": 5765,
+      "população": 433285,
       "capital": "Bandar Seri Begawan",
       "geo": {
         "latitude": 4.535277,
@@ -143,8 +143,8 @@ DADOS = {
       }
     },
     "butao": {
-      "area": 38394,
-      "populacao": 763092,
+      "área": 38394,
+      "população": 763092,
       "capital": "Thimbu",
       "geo": {
         "latitude": 27.514162,
@@ -163,8 +163,8 @@ DADOS = {
       }
     },
     "camboja": {
-      "area": 181035,
-      "populacao": 16486542,
+      "área": 181035,
+      "população": 16486542,
       "capital": "Phnom Penh",
       "geo": {
         "latitude": 12.565679,
@@ -183,8 +183,8 @@ DADOS = {
       }
     },
     "catar": {
-      "area": 11586,
-      "populacao": 2832067,
+      "área": 11586,
+      "população": 2832067,
       "capital": "Doha",
       "geo": {
         "latitude": 25.354826,
@@ -203,8 +203,8 @@ DADOS = {
       }
     },
     "cazaquistao": {
-      "area": 2724900,
-      "populacao": 18513930,
+      "área": 2724900,
+      "população": 18513930,
       "capital": "Nursultan",
       "geo": {
         "latitude": 48.019573,
@@ -223,8 +223,8 @@ DADOS = {
       }
     },
     "china": {
-      "area": 9596961,
-      "populacao": 1397715000,
+      "área": 9596961,
+      "população": 1397715000,
       "capital": "Pequim",
       "geo": {
         "latitude": 35.86166,
@@ -243,8 +243,8 @@ DADOS = {
       }
     },
     "chipre": {
-      "area": 9251,
-      "populacao": 1198575,
+      "área": 9251,
+      "população": 1198575,
       "capital": "Nicosia",
       "geo": {
         "latitude": 35.126413,
@@ -263,8 +263,8 @@ DADOS = {
       }
     },
     "cingapura": {
-      "area": 719,
-      "populacao": 5703569,
+      "área": 719,
+      "população": 5703569,
       "capital": "Singapore",
       "geo": {
         "latitude": 1.352083,
@@ -283,8 +283,8 @@ DADOS = {
       }
     },
     "coreia do norte": {
-      "area": 120540,
-      "populacao": 25666161,
+      "área": 120540,
+      "população": 25666161,
       "capital": "Pyongyang",
       "geo": {
         "latitude": 40.339852,
@@ -303,8 +303,8 @@ DADOS = {
       }
     },
     "coreia do sul": {
-      "area": 99720,
-      "populacao": 51709098,
+      "área": 99720,
+      "população": 51709098,
       "capital": "Seul",
       "geo": {
         "latitude": 35.907757,
@@ -323,8 +323,8 @@ DADOS = {
       }
     },
     "emirados arabes unidos": {
-      "area": 83600,
-      "populacao": 9770529,
+      "área": 83600,
+      "população": 9770529,
       "capital": "Abu Dhabi",
       "geo": {
         "latitude": 23.424076,
@@ -343,8 +343,8 @@ DADOS = {
       }
     },
     "filipinas": {
-      "area": 300000,
-      "populacao": 108116615,
+      "área": 300000,
+      "população": 108116615,
       "capital": "Manila",
       "geo": {
         "latitude": 12.879721,
@@ -363,8 +363,8 @@ DADOS = {
       }
     },
     "georgia": {
-      "area": 69700,
-      "populacao": 3720382,
+      "área": 69700,
+      "população": 3720382,
       "capital": "Tbilisi",
       "geo": {
         "latitude": 42.315407,
@@ -383,8 +383,8 @@ DADOS = {
       }
     },
     "iemen": {
-      "area": 527968,
-      "populacao": 29161922,
+      "área": 527968,
+      "população": 29161922,
       "capital": "SanA",
       "geo": {
         "latitude": 15.552727,
@@ -403,8 +403,8 @@ DADOS = {
       }
     },
     "india": {
-      "area": 3287263,
-      "populacao": 1366417754,
+      "área": 3287263,
+      "população": 1366417754,
       "capital": "Nova Deli",
       "geo": {
         "latitude": 20.593684,
@@ -423,8 +423,8 @@ DADOS = {
       }
     },
     "indonesia": {
-      "area": 1904569,
-      "populacao": 270203917,
+      "área": 1904569,
+      "população": 270203917,
       "capital": "Jacarta",
       "geo": {
         "latitude": -0.789275,
@@ -443,8 +443,8 @@ DADOS = {
       }
     },
     "ira": {
-      "area": 1648195,
-      "populacao": 82913906,
+      "área": 1648195,
+      "população": 82913906,
       "capital": "Teera",
       "geo": {
         "latitude": 32.427908,
@@ -463,8 +463,8 @@ DADOS = {
       }
     },
     "iraque": {
-      "area": 437072,
-      "populacao": 39309783,
+      "área": 437072,
+      "população": 39309783,
       "capital": "BagdA",
       "geo": {
         "latitude": 33.223191,
@@ -483,8 +483,8 @@ DADOS = {
       }
     },
     "israel": {
-      "area": 20770,
-      "populacao": 9053300,
+      "área": 20770,
+      "população": 9053300,
       "capital": "Jerusalem",
       "geo": {
         "latitude": 31.046051,
@@ -503,8 +503,8 @@ DADOS = {
       }
     },
     "japao": {
-      "area": 377915,
-      "populacao": 126226568,
+      "área": 377915,
+      "população": 126226568,
       "capital": "Toquio",
       "geo": {
         "latitude": 36.204824,
@@ -523,8 +523,8 @@ DADOS = {
       }
     },
     "jordania": {
-      "area": 89342,
-      "populacao": 10101694,
+      "área": 89342,
+      "população": 10101694,
       "capital": "Ama",
       "geo": {
         "latitude": 30.585164,
@@ -543,8 +543,8 @@ DADOS = {
       }
     },
     "kuwait": {
-      "area": 17818,
-      "populacao": 4207083,
+      "área": 17818,
+      "população": 4207083,
       "capital": "Kuwait",
       "geo": {
         "latitude": 29.31166,
@@ -563,8 +563,8 @@ DADOS = {
       }
     },
     "laos": {
-      "area": 236800,
-      "populacao": 7169455,
+      "área": 236800,
+      "população": 7169455,
       "capital": "Vientiane",
       "geo": {
         "latitude": 19.85627,
@@ -583,8 +583,8 @@ DADOS = {
       }
     },
     "libano": {
-      "area": 10452,
-      "populacao": 6855713,
+      "área": 10452,
+      "população": 6855713,
       "capital": "Beirute",
       "geo": {
         "latitude": 33.854721,
@@ -603,8 +603,8 @@ DADOS = {
       }
     },
     "malasia": {
-      "area": 329847,
-      "populacao": 31949777,
+      "área": 329847,
+      "população": 31949777,
       "capital": "Kuala Lumpur",
       "geo": {
         "latitude": 4.210484,
@@ -623,8 +623,8 @@ DADOS = {
       }
     },
     "maldivas": {
-      "area": 298,
-      "populacao": 530953,
+      "área": 298,
+      "população": 530953,
       "capital": "Male",
       "geo": {
         "latitude": 3.202778,
@@ -643,8 +643,8 @@ DADOS = {
       }
     },
     "mongolia": {
-      "area": 1566000,
-      "populacao": 3225167,
+      "área": 1566000,
+      "população": 3225167,
       "capital": "Ula Bator",
       "geo": {
         "latitude": 46.862496,
@@ -663,8 +663,8 @@ DADOS = {
       }
     },
     "myanmar": {
-      "area": 676578,
-      "populacao": 54045420,
+      "área": 676578,
+      "população": 54045420,
       "capital": "Naypyidaw",
       "geo": {
         "latitude": 21.913965,
@@ -683,8 +683,8 @@ DADOS = {
       }
     },
     "nepal": {
-      "area": 147181,
-      "populacao": 28608710,
+      "área": 147181,
+      "população": 28608710,
       "capital": "Catmandu",
       "geo": {
         "latitude": 28.394857,
@@ -703,8 +703,8 @@ DADOS = {
       }
     },
     "oma": {
-      "area": 309500,
-      "populacao": 5266535,
+      "área": 309500,
+      "população": 5266535,
       "capital": "Mascate",
       "geo": {
         "latitude": 21.512583,
@@ -723,8 +723,8 @@ DADOS = {
       }
     },
     "paquistao": {
-      "area": 881913,
-      "populacao": 216565318,
+      "área": 881913,
+      "população": 216565318,
       "capital": "Islamabad",
       "geo": {
         "latitude": 30.375321,
@@ -743,8 +743,8 @@ DADOS = {
       }
     },
     "quirguistao": {
-      "area": 199951,
-      "populacao": 6456900,
+      "área": 199951,
+      "população": 6456900,
       "capital": "Bisqueque",
       "geo": {
         "latitude": 41.20438,
@@ -763,8 +763,8 @@ DADOS = {
       }
     },
     "siria": {
-      "area": 185180,
-      "populacao": 17070135,
+      "área": 185180,
+      "população": 17070135,
       "capital": "Damasco",
       "geo": {
         "latitude": 34.802075,
@@ -783,8 +783,8 @@ DADOS = {
       }
     },
     "sri lanka": {
-      "area": 65610,
-      "populacao": 21803000,
+      "área": 65610,
+      "população": 21803000,
       "capital": "Colombo",
       "geo": {
         "latitude": 7.873054,
@@ -803,8 +803,8 @@ DADOS = {
       }
     },
     "tailandia": {
-      "area": 513120,
-      "populacao": 69625582,
+      "área": 513120,
+      "população": 69625582,
       "capital": "Banguecoque",
       "geo": {
         "latitude": 15.870032,
@@ -823,8 +823,8 @@ DADOS = {
       }
     },
     "taiwan": {
-      "area": 35980,
-      "populacao": 23508362,
+      "área": 35980,
+      "população": 23508362,
       "capital": "Taipe",
       "geo": {
         "latitude": 23.69781,
@@ -843,8 +843,8 @@ DADOS = {
       }
     },
     "tajiquistao": {
-      "area": 143100,
-      "populacao": 9321018,
+      "área": 143100,
+      "população": 9321018,
       "capital": "Duchambe",
       "geo": {
         "latitude": 38.861034,
@@ -863,8 +863,8 @@ DADOS = {
       }
     },
     "timor-leste": {
-      "area": 14874,
-      "populacao": 3500000,
+      "área": 14874,
+      "população": 3500000,
       "capital": "Dili",
       "geo": {
         "latitude": -8.874217,
@@ -883,8 +883,8 @@ DADOS = {
       }
     },
     "turquemenistao": {
-      "area": 491210,
-      "populacao": 5942089,
+      "área": 491210,
+      "população": 5942089,
       "capital": "Asgabate",
       "geo": {
         "latitude": 38.969719,
@@ -903,8 +903,8 @@ DADOS = {
       }
     },
     "turquia": {
-      "area": 783562,
-      "populacao": 83429615,
+      "área": 783562,
+      "população": 83429615,
       "capital": "Ancara",
       "geo": {
         "latitude": 38.963745,
@@ -923,8 +923,8 @@ DADOS = {
       }
     },
     "uzbequistao": {
-      "area": 448978,
-      "populacao": 33580650,
+      "área": 448978,
+      "população": 33580650,
       "capital": "Tashkent",
       "geo": {
         "latitude": 41.377491,
@@ -943,8 +943,8 @@ DADOS = {
       }
     },
     "vietna": {
-      "area": 331210,
-      "populacao": 96462106,
+      "área": 331210,
+      "população": 96462106,
       "capital": "Hanoi",
       "geo": {
         "latitude": 14.058324,
@@ -965,8 +965,8 @@ DADOS = {
   },
   "africa": {
     "africa do sul": {
-      "area": 1221037,
-      "populacao": 58558270,
+      "área": 1221037,
+      "população": 58558270,
       "capital": "Bloemfontein",
       "geo": {
         "latitude": -30.559482,
@@ -985,8 +985,8 @@ DADOS = {
       }
     },
     "angola": {
-      "area": 1246700,
-      "populacao": 31825295,
+      "área": 1246700,
+      "população": 31825295,
       "capital": "Luanda",
       "geo": {
         "latitude": -11.202692,
@@ -1005,8 +1005,8 @@ DADOS = {
       }
     },
     "argelia": {
-      "area": 2381741,
-      "populacao": 43053054,
+      "área": 2381741,
+      "população": 43053054,
       "capital": "Argel",
       "geo": {
         "latitude": 28.033886,
@@ -1025,8 +1025,8 @@ DADOS = {
       }
     },
     "benin": {
-      "area": 114763,
-      "populacao": 11801151,
+      "área": 114763,
+      "população": 11801151,
       "capital": "Porto Novo",
       "geo": {
         "latitude": 9.30769,
@@ -1045,8 +1045,8 @@ DADOS = {
       }
     },
     "botsuana": {
-      "area": 581730,
-      "populacao": 2303697,
+      "área": 581730,
+      "população": 2303697,
       "capital": "Gaborone",
       "geo": {
         "latitude": -22.328474,
@@ -1065,8 +1065,8 @@ DADOS = {
       }
     },
     "burkina faso": {
-      "area": 274200,
-      "populacao": 20321378,
+      "área": 274200,
+      "população": 20321378,
       "capital": "Ouagadougou",
       "geo": {
         "latitude": 12.238333,
@@ -1085,8 +1085,8 @@ DADOS = {
       }
     },
     "burundi": {
-      "area": 27834,
-      "populacao": 11530580,
+      "área": 27834,
+      "população": 11530580,
       "capital": "Bujumbura",
       "geo": {
         "latitude": -3.373056,
@@ -1105,8 +1105,8 @@ DADOS = {
       }
     },
     "cabo verde": {
-      "area": 4033,
-      "populacao": 483628,
+      "área": 4033,
+      "população": 483628,
       "capital": "Praia",
       "geo": {
         "latitude": 16.002082,
@@ -1125,8 +1125,8 @@ DADOS = {
       }
     },
     "camaroes": {
-      "area": 475442,
-      "populacao": 25876380,
+      "área": 475442,
+      "população": 25876380,
       "capital": "Iaunde",
       "geo": {
         "latitude": 7.369722,
@@ -1145,8 +1145,8 @@ DADOS = {
       }
     },
     "chade": {
-      "area": 1284000,
-      "populacao": 15946876,
+      "área": 1284000,
+      "população": 15946876,
       "capital": "N'Djamena",
       "geo": {
         "latitude": 15.454166,
@@ -1165,8 +1165,8 @@ DADOS = {
       }
     },
     "comores": {
-      "area": 2235,
-      "populacao": 850886,
+      "área": 2235,
+      "população": 850886,
       "capital": "Moroni",
       "geo": {
         "latitude": -11.875001,
@@ -1185,8 +1185,8 @@ DADOS = {
       }
     },
     "costa do marfim": {
-      "area": 322463,
-      "populacao": 25716544,
+      "área": 322463,
+      "população": 25716544,
       "capital": "Yamoussoukro",
       "geo": {
         "latitude": 7.539989,
@@ -1205,8 +1205,8 @@ DADOS = {
       }
     },
     "djibuti": {
-      "area": 23200,
-      "populacao": 973560,
+      "área": 23200,
+      "população": 973560,
       "capital": "Djibouti",
       "geo": {
         "latitude": 11.825138,
@@ -1225,8 +1225,8 @@ DADOS = {
       }
     },
     "egito": {
-      "area": 1001450,
-      "populacao": 100388073,
+      "área": 1001450,
+      "população": 100388073,
       "capital": "Cairo",
       "geo": {
         "latitude": 26.820553,
@@ -1245,8 +1245,8 @@ DADOS = {
       }
     },
     "eritreia": {
-      "area": 117600,
-      "populacao": 6333135,
+      "área": 117600,
+      "população": 6333135,
       "capital": "Asmara",
       "geo": {
         "latitude": 15.179384,
@@ -1265,8 +1265,8 @@ DADOS = {
       }
     },
     "etiopia": {
-      "area": 1104300,
-      "populacao": 112078730,
+      "área": 1104300,
+      "população": 112078730,
       "capital": "Adis Abeba",
       "geo": {
         "latitude": 9.145,
@@ -1285,8 +1285,8 @@ DADOS = {
       }
     },
     "gabao": {
-      "area": 267667,
-      "populacao": 2172579,
+      "área": 267667,
+      "população": 2172579,
       "capital": "Libreville",
       "geo": {
         "latitude": -0.803689,
@@ -1305,8 +1305,8 @@ DADOS = {
       }
     },
     "gambia": {
-      "area": 11300,
-      "populacao": 2347706,
+      "área": 11300,
+      "população": 2347706,
       "capital": "Banjul",
       "geo": {
         "latitude": 13.443182,
@@ -1325,8 +1325,8 @@ DADOS = {
       }
     },
     "gana": {
-      "area": 238533,
-      "populacao": 30417856,
+      "área": 238533,
+      "população": 30417856,
       "capital": "Acra",
       "geo": {
         "latitude": 7.946527,
@@ -1345,8 +1345,8 @@ DADOS = {
       }
     },
     "guine": {
-      "area": 245857,
-      "populacao": 12771246,
+      "área": 245857,
+      "população": 12771246,
       "capital": "Conacri",
       "geo": {
         "latitude": 9.945587,
@@ -1365,8 +1365,8 @@ DADOS = {
       }
     },
     "guine equatorial": {
-      "area": 28051,
-      "populacao": 1468777,
+      "área": 28051,
+      "população": 1468777,
       "capital": "Malabo",
       "geo": {
         "latitude": 1.650801,
@@ -1385,8 +1385,8 @@ DADOS = {
       }
     },
     "guine-bissau": {
-      "area": 36125,
-      "populacao": 1920922,
+      "área": 36125,
+      "população": 1920922,
       "capital": "Bissau",
       "geo": {
         "latitude": 11.803749,
@@ -1405,8 +1405,8 @@ DADOS = {
       }
     },
     "lesoto": {
-      "area": 30355,
-      "populacao": 2125268,
+      "área": 30355,
+      "população": 2125268,
       "capital": "Maseru",
       "geo": {
         "latitude": -29.609988,
@@ -1425,8 +1425,8 @@ DADOS = {
       }
     },
     "liberia": {
-      "area": 111369,
-      "populacao": 4937374,
+      "área": 111369,
+      "população": 4937374,
       "capital": "Monrovia",
       "geo": {
         "latitude": 6.428055,
@@ -1445,8 +1445,8 @@ DADOS = {
       }
     },
     "libia": {
-      "area": 1759541,
-      "populacao": 6777452,
+      "área": 1759541,
+      "população": 6777452,
       "capital": "Tripoli",
       "geo": {
         "latitude": 26.3351,
@@ -1465,8 +1465,8 @@ DADOS = {
       }
     },
     "madagascar": {
-      "area": 587041,
-      "populacao": 26969307,
+      "área": 587041,
+      "população": 26969307,
       "capital": "Antananarivo",
       "geo": {
         "latitude": -18.766947,
@@ -1485,8 +1485,8 @@ DADOS = {
       }
     },
     "malawi": {
-      "area": 118484,
-      "populacao": 18628747,
+      "área": 118484,
+      "população": 18628747,
       "capital": "Lilongwe",
       "geo": {
         "latitude": -13.254308,
@@ -1505,8 +1505,8 @@ DADOS = {
       }
     },
     "mali": {
-      "area": 1240192,
-      "populacao": 19658031,
+      "área": 1240192,
+      "população": 19658031,
       "capital": "Bamako",
       "geo": {
         "latitude": 17.570692,
@@ -1525,8 +1525,8 @@ DADOS = {
       }
     },
     "marrocos": {
-      "area": 446550,
-      "populacao": 36910560,
+      "área": 446550,
+      "população": 36910560,
       "capital": "Rabat",
       "geo": {
         "latitude": 31.791702,
@@ -1545,8 +1545,8 @@ DADOS = {
       }
     },
     "mauricio": {
-      "area": 2040,
-      "populacao": 1265711,
+      "área": 2040,
+      "população": 1265711,
       "capital": "Port Louis",
       "geo": {
         "latitude": -20.348404,
@@ -1565,8 +1565,8 @@ DADOS = {
       }
     },
     "mauritania": {
-      "area": 1030700,
-      "populacao": 4525696,
+      "área": 1030700,
+      "população": 4525696,
       "capital": "Nouakchott",
       "geo": {
         "latitude": 21.00789,
@@ -1585,8 +1585,8 @@ DADOS = {
       }
     },
     "mocambique": {
-      "area": 801590,
-      "populacao": 30366036,
+      "área": 801590,
+      "população": 30366036,
       "capital": "Maputo",
       "geo": {
         "latitude": -18.665695,
@@ -1605,8 +1605,8 @@ DADOS = {
       }
     },
     "namibia": {
-      "area": 825615,
-      "populacao": 2494530,
+      "área": 825615,
+      "população": 2494530,
       "capital": "Windhoek",
       "geo": {
         "latitude": -22.95764,
@@ -1625,8 +1625,8 @@ DADOS = {
       }
     },
     "niger": {
-      "area": 1267000,
-      "populacao": 23310715,
+      "área": 1267000,
+      "população": 23310715,
       "capital": "Niamey",
       "geo": {
         "latitude": 17.607789,
@@ -1645,8 +1645,8 @@ DADOS = {
       }
     },
     "nigeria": {
-      "area": 923768,
-      "populacao": 200963599,
+      "área": 923768,
+      "população": 200963599,
       "capital": "Abuja",
       "geo": {
         "latitude": 9.081999,
@@ -1665,8 +1665,8 @@ DADOS = {
       }
     },
     "quenia": {
-      "area": 580367,
-      "populacao": 52573973,
+      "área": 580367,
+      "população": 52573973,
       "capital": "Nairobi",
       "geo": {
         "latitude": -0.023559,
@@ -1685,8 +1685,8 @@ DADOS = {
       }
     },
     "republica centro-africana": {
-      "area": 622984,
-      "populacao": 4745185,
+      "área": 622984,
+      "população": 4745185,
       "capital": "Bangui",
       "geo": {
         "latitude": 6.611111,
@@ -1705,8 +1705,8 @@ DADOS = {
       }
     },
     "republica do congo": {
-      "area": 342000,
-      "populacao": 5380508,
+      "área": 342000,
+      "população": 5380508,
       "capital": "Brazavile",
       "geo": {
         "latitude": -0.228021,
@@ -1725,8 +1725,8 @@ DADOS = {
       }
     },
     "ruanda": {
-      "area": 26338,
-      "populacao": 12626950,
+      "área": 26338,
+      "população": 12626950,
       "capital": "Kigali",
       "geo": {
         "latitude": -1.940278,
@@ -1745,8 +1745,8 @@ DADOS = {
       }
     },
     "sao tome e principe": {
-      "area": 964,
-      "populacao": 215056,
+      "área": 964,
+      "população": 215056,
       "capital": "Sao Tome",
       "geo": {
         "latitude": 0.18636,
@@ -1765,8 +1765,8 @@ DADOS = {
       }
     },
     "senegal": {
-      "area": 196722,
-      "populacao": 16296364,
+      "área": 196722,
+      "população": 16296364,
       "capital": "Dakar",
       "geo": {
         "latitude": 14.497401,
@@ -1785,8 +1785,8 @@ DADOS = {
       }
     },
     "serra leoa": {
-      "area": 71740,
-      "populacao": 7813215,
+      "área": 71740,
+      "população": 7813215,
       "capital": "Freetown",
       "geo": {
         "latitude": 8.460555,
@@ -1805,8 +1805,8 @@ DADOS = {
       }
     },
     "seychelles": {
-      "area": 459,
-      "populacao": 97625,
+      "área": 459,
+      "população": 97625,
       "capital": "Victoria",
       "geo": {
         "latitude": -4.679574,
@@ -1825,8 +1825,8 @@ DADOS = {
       }
     },
     "somalia": {
-      "area": 637657,
-      "populacao": 15442905,
+      "área": 637657,
+      "população": 15442905,
       "capital": "Mogadiscio",
       "geo": {
         "latitude": 5.152149,
@@ -1845,8 +1845,8 @@ DADOS = {
       }
     },
     "suazilandia": {
-      "area": 17364,
-      "populacao": 1093238,
+      "área": 17364,
+      "população": 1093238,
       "capital": "Mbabane",
       "geo": {
         "latitude": -26.522503,
@@ -1865,8 +1865,8 @@ DADOS = {
       }
     },
     "sudao": {
-      "area": 1886068,
-      "populacao": 42813238,
+      "área": 1886068,
+      "população": 42813238,
       "capital": "Cartum",
       "geo": {
         "latitude": 12.862807,
@@ -1885,8 +1885,8 @@ DADOS = {
       }
     },
     "tanzania": {
-      "area": 947303,
-      "populacao": 58005463,
+      "área": 947303,
+      "população": 58005463,
       "capital": "Dodoma",
       "geo": {
         "latitude": -6.369028,
@@ -1905,8 +1905,8 @@ DADOS = {
       }
     },
     "tunisia": {
-      "area": 163610,
-      "populacao": 11694719,
+      "área": 163610,
+      "população": 11694719,
       "capital": "Tunes",
       "geo": {
         "latitude": 33.886917,
@@ -1925,8 +1925,8 @@ DADOS = {
       }
     },
     "uganda": {
-      "area": 241038,
-      "populacao": 44269594,
+      "área": 241038,
+      "população": 44269594,
       "capital": "Kampala",
       "geo": {
         "latitude": 1.373333,
@@ -1945,8 +1945,8 @@ DADOS = {
       }
     },
     "zambia": {
-      "area": 752618,
-      "populacao": 17861030,
+      "área": 752618,
+      "população": 17861030,
       "capital": "Lusaca",
       "geo": {
         "latitude": -13.133897,
@@ -1965,8 +1965,8 @@ DADOS = {
       }
     },
     "zimbabue": {
-      "area": 390757,
-      "populacao": 14645468,
+      "área": 390757,
+      "população": 14645468,
       "capital": "Harare",
       "geo": {
         "latitude": -19.015438,
@@ -1987,8 +1987,8 @@ DADOS = {
   },
   "europa": {
     "albania": {
-      "area": 28748,
-      "populacao": 2854191,
+      "área": 28748,
+      "população": 2854191,
       "capital": "Tirana",
       "geo": {
         "latitude": 41.153332,
@@ -2007,8 +2007,8 @@ DADOS = {
       }
     },
     "alemanha": {
-      "area": 357022,
-      "populacao": 83132799,
+      "área": 357022,
+      "população": 83132799,
       "capital": "Berlim",
       "geo": {
         "latitude": 51.165691,
@@ -2027,8 +2027,8 @@ DADOS = {
       }
     },
     "andorra": {
-      "area": 468,
-      "populacao": 77142,
+      "área": 468,
+      "população": 77142,
       "capital": "Andorra-a-Velha",
       "geo": {
         "latitude": 42.546245,
@@ -2047,8 +2047,8 @@ DADOS = {
       }
     },
     "austria": {
-      "area": 83871,
-      "populacao": 8877067,
+      "área": 83871,
+      "população": 8877067,
       "capital": "Viena",
       "geo": {
         "latitude": 47.516231,
@@ -2067,8 +2067,8 @@ DADOS = {
       }
     },
     "belgica": {
-      "area": 30528,
-      "populacao": 11484055,
+      "área": 30528,
+      "população": 11484055,
       "capital": "Cidade de Bruxelas",
       "geo": {
         "latitude": 50.503887,
@@ -2087,8 +2087,8 @@ DADOS = {
       }
     },
     "bielorrussia": {
-      "area": 207600,
-      "populacao": 9466856,
+      "área": 207600,
+      "população": 9466856,
       "capital": "Minsk",
       "geo": {
         "latitude": 53.709807,
@@ -2107,8 +2107,8 @@ DADOS = {
       }
     },
     "bosnia e herzegovina": {
-      "area": 51197,
-      "populacao": 3301000,
+      "área": 51197,
+      "população": 3301000,
       "capital": "Sarajevo",
       "geo": {
         "latitude": 43.915886,
@@ -2127,8 +2127,8 @@ DADOS = {
       }
     },
     "bulgaria": {
-      "area": 110994,
-      "populacao": 6975761,
+      "área": 110994,
+      "população": 6975761,
       "capital": "Sofia",
       "geo": {
         "latitude": 42.733883,
@@ -2147,8 +2147,8 @@ DADOS = {
       }
     },
     "croacia": {
-      "area": 56594,
-      "populacao": 4067500,
+      "área": 56594,
+      "população": 4067500,
       "capital": "Zagreb",
       "geo": {
         "latitude": 45.1,
@@ -2167,8 +2167,8 @@ DADOS = {
       }
     },
     "dinamarca": {
-      "area": 43094,
-      "populacao": 5818553,
+      "área": 43094,
+      "população": 5818553,
       "capital": "Copenhaga",
       "geo": {
         "latitude": 56.26392,
@@ -2187,8 +2187,8 @@ DADOS = {
       }
     },
     "eslovaquia": {
-      "area": 49035,
-      "populacao": 5454073,
+      "área": 49035,
+      "população": 5454073,
       "capital": "Bratislava",
       "geo": {
         "latitude": 48.669026,
@@ -2207,8 +2207,8 @@ DADOS = {
       }
     },
     "eslovenia": {
-      "area": 20273,
-      "populacao": 2087946,
+      "área": 20273,
+      "população": 2087946,
       "capital": "Liubliana",
       "geo": {
         "latitude": 46.151241,
@@ -2227,8 +2227,8 @@ DADOS = {
       }
     },
     "espanha": {
-      "area": 505990,
-      "populacao": 47076781,
+      "área": 505990,
+      "população": 47076781,
       "capital": "Madrid",
       "geo": {
         "latitude": 40.463667,
@@ -2247,8 +2247,8 @@ DADOS = {
       }
     },
     "estonia": {
-      "area": 45228,
-      "populacao": 1326590,
+      "área": 45228,
+      "população": 1326590,
       "capital": "Tallinn",
       "geo": {
         "latitude": 58.595272,
@@ -2267,8 +2267,8 @@ DADOS = {
       }
     },
     "finlandia": {
-      "area": 338145,
-      "populacao": 5520314,
+      "área": 338145,
+      "população": 5520314,
       "capital": "Helsinquia",
       "geo": {
         "latitude": 61.92411,
@@ -2287,8 +2287,8 @@ DADOS = {
       }
     },
     "franca": {
-      "area": 643801,
-      "populacao": 67059887,
+      "área": 643801,
+      "população": 67059887,
       "capital": "Paris",
       "geo": {
         "latitude": 46.227638,
@@ -2307,8 +2307,8 @@ DADOS = {
       }
     },
     "grecia": {
-      "area": 131957,
-      "populacao": 10716322,
+      "área": 131957,
+      "população": 10716322,
       "capital": "Atenas",
       "geo": {
         "latitude": 39.074208,
@@ -2327,8 +2327,8 @@ DADOS = {
       }
     },
     "holanda": {
-      "area": 41543,
-      "populacao": 17332850,
+      "área": 41543,
+      "população": 17332850,
       "capital": "Amsterda",
       "geo": {
         "latitude": 52.370216,
@@ -2347,8 +2347,8 @@ DADOS = {
       }
     },
     "hungria": {
-      "area": 93030,
-      "populacao": 9769949,
+      "área": 93030,
+      "população": 9769949,
       "capital": "Budapeste",
       "geo": {
         "latitude": 47.162494,
@@ -2367,8 +2367,8 @@ DADOS = {
       }
     },
     "islandia": {
-      "area": 103000,
-      "populacao": 361313,
+      "área": 103000,
+      "população": 361313,
       "capital": "Reykjavik",
       "geo": {
         "latitude": 64.963051,
@@ -2387,8 +2387,8 @@ DADOS = {
       }
     },
     "italia": {
-      "area": 301340,
-      "populacao": 60297396,
+      "área": 301340,
+      "população": 60297396,
       "capital": "Roma",
       "geo": {
         "latitude": 41.87194,
@@ -2407,8 +2407,8 @@ DADOS = {
       }
     },
     "kosovo": {
-      "area": 10908,
-      "populacao": 1883018,
+      "área": 10908,
+      "população": 1883018,
       "capital": "Pristina",
       "geo": {
         "latitude": 42.602636,
@@ -2427,8 +2427,8 @@ DADOS = {
       }
     },
     "letonia": {
-      "area": 64589,
-      "populacao": 1912789,
+      "área": 64589,
+      "população": 1912789,
       "capital": "Riga",
       "geo": {
         "latitude": 56.879635,
@@ -2447,8 +2447,8 @@ DADOS = {
       }
     },
     "liechtenstein": {
-      "area": 160,
-      "populacao": 38019,
+      "área": 160,
+      "população": 38019,
       "capital": "Vaduz",
       "geo": {
         "latitude": 47.166,
@@ -2467,8 +2467,8 @@ DADOS = {
       }
     },
     "lituania": {
-      "area": 65300,
-      "populacao": 2786844,
+      "área": 65300,
+      "população": 2786844,
       "capital": "Vilnius",
       "geo": {
         "latitude": 55.169438,
@@ -2487,8 +2487,8 @@ DADOS = {
       }
     },
     "luxemburgo": {
-      "area": 2586,
-      "populacao": 619896,
+      "área": 2586,
+      "população": 619896,
       "capital": "Luxemburgo",
       "geo": {
         "latitude": 49.815273,
@@ -2507,8 +2507,8 @@ DADOS = {
       }
     },
     "macedonia": {
-      "area": 25713,
-      "populacao": 2075301,
+      "área": 25713,
+      "população": 2075301,
       "capital": "Escopia",
       "geo": {
         "latitude": 41.608635,
@@ -2527,8 +2527,8 @@ DADOS = {
       }
     },
     "malta": {
-      "area": 316,
-      "populacao": 502653,
+      "área": 316,
+      "população": 502653,
       "capital": "Valeta",
       "geo": {
         "latitude": 35.937496,
@@ -2547,8 +2547,8 @@ DADOS = {
       }
     },
     "moldova": {
-      "area": 33846,
-      "populacao": 2657637,
+      "área": 33846,
+      "população": 2657637,
       "capital": "Chisinau",
       "geo": {
         "latitude": 47.411631,
@@ -2567,8 +2567,8 @@ DADOS = {
       }
     },
     "monaco": {
-      "area": 2,
-      "populacao": 38964,
+      "área": 2,
+      "população": 38964,
       "capital": "Monaco",
       "geo": {
         "latitude": 43.750298,
@@ -2587,8 +2587,8 @@ DADOS = {
       }
     },
     "montenegro": {
-      "area": 13812,
-      "populacao": 622137,
+      "área": 13812,
+      "população": 622137,
       "capital": "Podgorica",
       "geo": {
         "latitude": 42.708678,
@@ -2607,8 +2607,8 @@ DADOS = {
       }
     },
     "noruega": {
-      "area": 385207,
-      "populacao": 5347896,
+      "área": 385207,
+      "população": 5347896,
       "capital": "Oslo",
       "geo": {
         "latitude": 60.472024,
@@ -2627,8 +2627,8 @@ DADOS = {
       }
     },
     "polonia": {
-      "area": 312685,
-      "populacao": 37970874,
+      "área": 312685,
+      "população": 37970874,
       "capital": "Varsovia",
       "geo": {
         "latitude": 51.919438,
@@ -2647,8 +2647,8 @@ DADOS = {
       }
     },
     "portugal": {
-      "area": 92212,
-      "populacao": 10269417,
+      "área": 92212,
+      "população": 10269417,
       "capital": "Lisboa",
       "geo": {
         "latitude": 39.399872,
@@ -2667,8 +2667,8 @@ DADOS = {
       }
     },
     "reino unido": {
-      "area": 243610,
-      "populacao": 66834405,
+      "área": 243610,
+      "população": 66834405,
       "capital": "Londres",
       "geo": {
         "latitude": 55.378051,
@@ -2687,8 +2687,8 @@ DADOS = {
       }
     },
     "republica checa": {
-      "area": 78866,
-      "populacao": 10669709,
+      "área": 78866,
+      "população": 10669709,
       "capital": "Praga",
       "geo": {
         "latitude": 49.817492,
@@ -2707,8 +2707,8 @@ DADOS = {
       }
     },
     "romenia": {
-      "area": 238397,
-      "populacao": 19356544,
+      "área": 238397,
+      "população": 19356544,
       "capital": "Bucareste",
       "geo": {
         "latitude": 45.943161,
@@ -2727,8 +2727,8 @@ DADOS = {
       }
     },
     "russia": {
-      "area": 17098240,
-      "populacao": 144373535,
+      "área": 17098240,
+      "população": 144373535,
       "capital": "Moscovo",
       "geo": {
         "latitude": 61.52401,
@@ -2747,8 +2747,8 @@ DADOS = {
       }
     },
     "san marino": {
-      "area": 61,
-      "populacao": 33860,
+      "área": 61,
+      "população": 33860,
       "capital": "San Marino",
       "geo": {
         "latitude": 43.94236,
@@ -2767,8 +2767,8 @@ DADOS = {
       }
     },
     "servia": {
-      "area": 88361,
-      "populacao": 6944975,
+      "área": 88361,
+      "população": 6944975,
       "capital": "Belgrado",
       "geo": {
         "latitude": 44.016521,
@@ -2787,8 +2787,8 @@ DADOS = {
       }
     },
     "suecia": {
-      "area": 450295,
-      "populacao": 10285453,
+      "área": 450295,
+      "população": 10285453,
       "capital": "Estocolmo",
       "geo": {
         "latitude": 60.128161,
@@ -2807,8 +2807,8 @@ DADOS = {
       }
     },
     "suica": {
-      "area": 41285,
-      "populacao": 8574832,
+      "área": 41285,
+      "população": 8574832,
       "capital": "Berna",
       "geo": {
         "latitude": 46.818188,
@@ -2827,8 +2827,8 @@ DADOS = {
       }
     },
     "ucrania": {
-      "area": 603550,
-      "populacao": 44385155,
+      "área": 603550,
+      "população": 44385155,
       "capital": "Kiev",
       "geo": {
         "latitude": 48.379433,
@@ -2847,8 +2847,8 @@ DADOS = {
       }
     },
     "vaticano": {
-      "area": 0,
-      "populacao": 1000,
+      "área": 0,
+      "população": 1000,
       "capital": "Vatican City",
       "geo": {
         "latitude": 41.9029,
@@ -2869,8 +2869,8 @@ DADOS = {
   },
   "america do norte": {
     "antigua e barbuda": {
-      "area": 443,
-      "populacao": 97118,
+      "área": 443,
+      "população": 97118,
       "capital": "Saint John's",
       "geo": {
         "latitude": 17.060816,
@@ -2889,8 +2889,8 @@ DADOS = {
       }
     },
     "bahamas": {
-      "area": 13878,
-      "populacao": 389482,
+      "área": 13878,
+      "população": 389482,
       "capital": "Nassau",
       "geo": {
         "latitude": 25.03428,
@@ -2909,8 +2909,8 @@ DADOS = {
       }
     },
     "barbados": {
-      "area": 439,
-      "populacao": 287025,
+      "área": 439,
+      "população": 287025,
       "capital": "Bridgetown",
       "geo": {
         "latitude": 13.193887,
@@ -2929,8 +2929,8 @@ DADOS = {
       }
     },
     "belize": {
-      "area": 22966,
-      "populacao": 390353,
+      "área": 22966,
+      "população": 390353,
       "capital": "Belmopan",
       "geo": {
         "latitude": 17.189877,
@@ -2949,8 +2949,8 @@ DADOS = {
       }
     },
     "canada": {
-      "area": 9984670,
-      "populacao": 37589262,
+      "área": 9984670,
+      "população": 37589262,
       "capital": "Ottawa",
       "geo": {
         "latitude": 56.130366,
@@ -2969,8 +2969,8 @@ DADOS = {
       }
     },
     "costa rica": {
-      "area": 51100,
-      "populacao": 5047561,
+      "área": 51100,
+      "população": 5047561,
       "capital": "San Jose",
       "geo": {
         "latitude": 9.748917,
@@ -2989,8 +2989,8 @@ DADOS = {
       }
     },
     "cuba": {
-      "area": 109884,
-      "populacao": 11333483,
+      "área": 109884,
+      "população": 11333483,
       "capital": "Havana",
       "geo": {
         "latitude": 21.521757,
@@ -3009,8 +3009,8 @@ DADOS = {
       }
     },
     "dominica": {
-      "area": 751,
-      "populacao": 71808,
+      "área": 751,
+      "população": 71808,
       "capital": "Roseau",
       "geo": {
         "latitude": 15.414999,
@@ -3029,8 +3029,8 @@ DADOS = {
       }
     },
     "el salvador": {
-      "area": 21041,
-      "populacao": 6453553,
+      "área": 21041,
+      "população": 6453553,
       "capital": "San Salvador",
       "geo": {
         "latitude": 13.794185,
@@ -3049,8 +3049,8 @@ DADOS = {
       }
     },
     "estados unidos": {
-      "area": 9833517,
-      "populacao": 328239523,
+      "área": 9833517,
+      "população": 328239523,
       "capital": "Washington, D.C.",
       "geo": {
         "latitude": 37.09024,
@@ -3069,8 +3069,8 @@ DADOS = {
       }
     },
     "granada": {
-      "area": 349,
-      "populacao": 112003,
+      "área": 349,
+      "população": 112003,
       "capital": "Saint George's",
       "geo": {
         "latitude": 12.262776,
@@ -3089,8 +3089,8 @@ DADOS = {
       }
     },
     "guatemala": {
-      "area": 108889,
-      "populacao": 16604026,
+      "área": 108889,
+      "população": 16604026,
       "capital": "Cidade da Guatemala",
       "geo": {
         "latitude": 15.783471,
@@ -3109,8 +3109,8 @@ DADOS = {
       }
     },
     "haiti": {
-      "area": 27750,
-      "populacao": 11263077,
+      "área": 27750,
+      "população": 11263077,
       "capital": "Porto Principe",
       "geo": {
         "latitude": 18.971187,
@@ -3129,8 +3129,8 @@ DADOS = {
       }
     },
     "honduras": {
-      "area": 112492,
-      "populacao": 9746117,
+      "área": 112492,
+      "população": 9746117,
       "capital": "Tegucigalpa",
       "geo": {
         "latitude": 15.199999,
@@ -3149,8 +3149,8 @@ DADOS = {
       }
     },
     "jamaica": {
-      "area": 10991,
-      "populacao": 2948279,
+      "área": 10991,
+      "população": 2948279,
       "capital": "Kingston",
       "geo": {
         "latitude": 18.109581,
@@ -3169,8 +3169,8 @@ DADOS = {
       }
     },
     "mexico": {
-      "area": 1972550,
-      "populacao": 126014024,
+      "área": 1972550,
+      "população": 126014024,
       "capital": "Cidade do Mexico",
       "geo": {
         "latitude": 23.634501,
@@ -3189,8 +3189,8 @@ DADOS = {
       }
     },
     "nicaragua": {
-      "area": 130375,
-      "populacao": 6545502,
+      "área": 130375,
+      "população": 6545502,
       "capital": "ManAgua",
       "geo": {
         "latitude": 12.865416,
@@ -3209,8 +3209,8 @@ DADOS = {
       }
     },
     "panama": {
-      "area": 75420,
-      "populacao": 4246439,
+      "área": 75420,
+      "população": 4246439,
       "capital": "Cidade do PanamA",
       "geo": {
         "latitude": 8.537981,
@@ -3229,8 +3229,8 @@ DADOS = {
       }
     },
     "republica dominicana": {
-      "area": 48670,
-      "populacao": 10738958,
+      "área": 48670,
+      "população": 10738958,
       "capital": "Santo Domingo",
       "geo": {
         "latitude": 18.735693,
@@ -3249,8 +3249,8 @@ DADOS = {
       }
     },
     "santa lucia": {
-      "area": 616,
-      "populacao": 182790,
+      "área": 616,
+      "população": 182790,
       "capital": "Castries",
       "geo": {
         "latitude": 13.909444,
@@ -3269,8 +3269,8 @@ DADOS = {
       }
     },
     "sao cristovao e nevis": {
-      "area": 261,
-      "populacao": 52823,
+      "área": 261,
+      "população": 52823,
       "capital": "Basseterre",
       "geo": {
         "latitude": 17.357822,
@@ -3289,8 +3289,8 @@ DADOS = {
       }
     },
     "sao vicente e granadinas": {
-      "area": 389,
-      "populacao": 100455,
+      "área": 389,
+      "população": 100455,
       "capital": "Kingstown",
       "geo": {
         "latitude": 12.984305,
@@ -3309,8 +3309,8 @@ DADOS = {
       }
     },
     "trindade e tobago": {
-      "area": 5128,
-      "populacao": 1394973,
+      "área": 5128,
+      "população": 1394973,
       "capital": "Port of Spain",
       "geo": {
         "latitude": 10.691803,
@@ -3331,8 +3331,8 @@ DADOS = {
   },
   "america do sul": {
     "argentina": {
-      "area": 2780400,
-      "populacao": 44938712,
+      "área": 2780400,
+      "população": 44938712,
       "capital": "Buenos Aires",
       "geo": {
         "latitude": -38.416097,
@@ -3351,8 +3351,8 @@ DADOS = {
       }
     },
     "bolivia": {
-      "area": 1098581,
-      "populacao": 11513100,
+      "área": 1098581,
+      "população": 11513100,
       "capital": "Sucre",
       "geo": {
         "latitude": -16.290154,
@@ -3371,8 +3371,8 @@ DADOS = {
       }
     },
     "brasil": {
-      "area": 8515767,
-      "populacao": 212559417,
+      "área": 8515767,
+      "população": 212559417,
       "capital": "Brasilia",
       "geo": {
         "latitude": -14.235004,
@@ -3391,8 +3391,8 @@ DADOS = {
       }
     },
     "chile": {
-      "area": 756102,
-      "populacao": 18952038,
+      "área": 756102,
+      "população": 18952038,
       "capital": "Santiago",
       "geo": {
         "latitude": -35.675147,
@@ -3411,8 +3411,8 @@ DADOS = {
       }
     },
     "colombia": {
-      "area": 1141748,
-      "populacao": 50339443,
+      "área": 1141748,
+      "população": 50339443,
       "capital": "BogotA",
       "geo": {
         "latitude": 4.570868,
@@ -3431,8 +3431,8 @@ DADOS = {
       }
     },
     "equador": {
-      "area": 283561,
-      "populacao": 17373662,
+      "área": 283561,
+      "população": 17373662,
       "capital": "Quito",
       "geo": {
         "latitude": -1.831239,
@@ -3451,8 +3451,8 @@ DADOS = {
       }
     },
     "guiana": {
-      "area": 214970,
-      "populacao": 782766,
+      "área": 214970,
+      "população": 782766,
       "capital": "Georgetown",
       "geo": {
         "latitude": 4.860416,
@@ -3471,8 +3471,8 @@ DADOS = {
       }
     },
     "paraguai": {
-      "area": 406752,
-      "populacao": 7044636,
+      "área": 406752,
+      "população": 7044636,
       "capital": "Assuncao",
       "geo": {
         "latitude": -23.442503,
@@ -3491,8 +3491,8 @@ DADOS = {
       }
     },
     "peru": {
-      "area": 1285216,
-      "populacao": 32510453,
+      "área": 1285216,
+      "população": 32510453,
       "capital": "Lima",
       "geo": {
         "latitude": -9.189967,
@@ -3511,8 +3511,8 @@ DADOS = {
       }
     },
     "suriname": {
-      "area": 163820,
-      "populacao": 581372,
+      "área": 163820,
+      "população": 581372,
       "capital": "Paramaribo",
       "geo": {
         "latitude": 3.919305,
@@ -3531,8 +3531,8 @@ DADOS = {
       }
     },
     "uruguai": {
-      "area": 176215,
-      "populacao": 3461734,
+      "área": 176215,
+      "população": 3461734,
       "capital": "Montevideu",
       "geo": {
         "latitude": -32.522779,
@@ -3551,8 +3551,8 @@ DADOS = {
       }
     },
     "venezuela": {
-      "area": 916445,
-      "populacao": 28515829,
+      "área": 916445,
+      "população": 28515829,
       "capital": "Caracas",
       "geo": {
         "latitude": 6.42375,
@@ -3573,8 +3573,8 @@ DADOS = {
   },
   "oceania": {
     "australia": {
-      "area": 7692024,
-      "populacao": 25364307,
+      "área": 7692024,
+      "população": 25364307,
       "capital": "Camberra",
       "geo": {
         "latitude": -25.274398,
@@ -3593,8 +3593,8 @@ DADOS = {
       }
     },
     "fiji": {
-      "area": 18274,
-      "populacao": 889953,
+      "área": 18274,
+      "população": 889953,
       "capital": "Suva",
       "geo": {
         "latitude": -16.578193,
@@ -3613,8 +3613,8 @@ DADOS = {
       }
     },
     "quiribati": {
-      "area": 811,
-      "populacao": 117606,
+      "área": 811,
+      "população": 117606,
       "capital": "Tarawa do Sul",
       "geo": {
         "latitude": -3.370417,
@@ -3633,8 +3633,8 @@ DADOS = {
       }
     },
     "micronesia": {
-      "area": 702,
-      "populacao": 113815,
+      "área": 702,
+      "população": 113815,
       "capital": "Palikir",
       "geo": {
         "latitude": 7.425554,
@@ -3653,8 +3653,8 @@ DADOS = {
       }
     },
     "nauru": {
-      "area": 21,
-      "populacao": 11200,
+      "área": 21,
+      "população": 11200,
       "capital": "Yaren",
       "geo": {
         "latitude": -0.522778,
@@ -3673,8 +3673,8 @@ DADOS = {
       }
     },
     "nova zelandia": {
-      "area": 268021,
-      "populacao": 4792409,
+      "área": 268021,
+      "população": 4792409,
       "capital": "Wellington",
       "geo": {
         "latitude": -40.900557,
@@ -3693,8 +3693,8 @@ DADOS = {
       }
     },
     "palau": {
-      "area": 459,
-      "populacao": 18008,
+      "área": 459,
+      "população": 18008,
       "capital": "Ngerulmud",
       "geo": {
         "latitude": 7.51498,
@@ -3713,8 +3713,8 @@ DADOS = {
       }
     },
     "papua nova guine": {
-      "area": 462840,
-      "populacao": 8776109,
+      "área": 462840,
+      "população": 8776109,
       "capital": "Porto Moresby",
       "geo": {
         "latitude": -6.314993,
@@ -3733,8 +3733,8 @@ DADOS = {
       }
     },
     "samoa": {
-      "area": 2842,
-      "populacao": 202506,
+      "área": 2842,
+      "população": 202506,
       "capital": "Apia",
       "geo": {
         "latitude": -13.759029,
@@ -3753,8 +3753,8 @@ DADOS = {
       }
     },
     "tonga": {
-      "area": 747,
-      "populacao": 100209,
+      "área": 747,
+      "população": 100209,
       "capital": "Nucualofa",
       "geo": {
         "latitude": -21.178986,
@@ -3773,8 +3773,8 @@ DADOS = {
       }
     },
     "tuvalu": {
-      "area": 26,
-      "populacao": 11646,
+      "área": 26,
+      "população": 11646,
       "capital": "Funafuti",
       "geo": {
         "latitude": -7.109535,
@@ -3793,8 +3793,8 @@ DADOS = {
       }
     },
     "vanuatu": {
-      "area": 12189,
-      "populacao": 299882,
+      "área": 12189,
+      "população": 299882,
       "capital": "Port Vila",
       "geo": {
         "latitude": -15.376706,
