@@ -208,3 +208,22 @@ def verifica(pergunta,respostas):
         else:
             print('Resposta inválida')
             jogada = (input(pergunta)).lower()
+
+def desistencia(pais,statusJogando):
+    desistir = verifica("Tem certeza que deseja desistir da rodada? [s|n] ",['s','n'])
+    statusJogando = (desistir == 'n')
+    if not statusJogando:
+        print(f"Que deselegante desistir, o país era: {pais}")
+    return statusJogando
+
+def fim(tentativas,jogada,pais):
+    if tentativas == 0 and jogada != pais:
+        print('Você perdeu :(')
+    elif tentativas == 0 and jogada == pais:
+        print('Você venceu!')
+    return False
+
+def reiniciar():
+    reiniciar = verifica('Você quer jogar novamente? [s/n]',['s','n'])
+    statusJogo = (reiniciar == 's')
+    return statusJogo

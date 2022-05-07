@@ -65,5 +65,5 @@ while statusJogo:
         else:
             print('País desconhecido')
 
-    statusJogo = reiniciar(statusJogo)
+    statusJogo = reiniciar()
                 
