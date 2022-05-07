@@ -177,9 +177,19 @@ def exibe_infos(paisesTestados, tentativas, dicas):
         distancia2 = f"{int(pais[1]):,}".replace(',', '.')
 
         print(f"{cor}    {distancia2} km -> {pais[0]} {cores['reset']}")
+
     print("\nDicas:")
     for dica, valor in dicas.items():
-        print(f"    {dica}: {valor}")
+        print(f"    {dica}: ", end='')
+        if dica == 'Letras da capital' or dica == 'Cores da bandeira':
+            for subvalor in valor:
+                if subvalor == valor[-1]:
+                    print(subvalor)
+                else:
+                    print(subvalor, end=", ")
+        else:
+            print(valor)
+
     if tentativas <= 10:
         corTentativa = cores['amarelo']
     elif tentativas <= 5:
@@ -187,7 +197,7 @@ def exibe_infos(paisesTestados, tentativas, dicas):
     else:
         corTentativa = cores['ciano']
 
-    print(f"\n Você tem {corTentativa}{tentativas}{cores['reset']} tentativa (s)")
+    print(f"\nVocê tem {corTentativa}{tentativas}{cores['reset']} tentativa (s)")
 
 def verifica(pergunta,respostas):
     jogada = (input(pergunta)).lower()
