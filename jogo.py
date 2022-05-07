@@ -38,9 +38,7 @@ while statusJogo:
             exibe_infos(paisesTestados, tentativas, dicas)
 
         elif jogada == 'desisto':
-            desistir = verifica("Tem certeza que deseja desistir da rodada? [s|n] ",['s','n'])
-            statusJogando = (desistir == 'n')
-            print(f"Que deselegante desistir, o país era: {pais}")
+            statusJogando = desistencia(pais,statusJogando)
 
         elif jogada == 'inventario':
             exibe_infos(paisesTestados, tentativas, dicas)
@@ -52,22 +50,20 @@ while statusJogo:
             paisTestado = dadosPaises[jogada]
             tentativas -= 1
 
-            if jogada == pais:
+            if tentativas == 0:
+                statusJogando = fim((tentativas,jogada,pais))
+
+            elif jogada == pais:
                 print('Você venceu')
                 statusJogando = False
-                reiniciar = verifica('Você quer jogar novamente? [s|n] ',['s','n'])
-                statusJogo = (reiniciar == 's')
 
             else:
                 distancia = haversine(infosPais, paisTestado)
                 paisesTestados = adiciona_em_ordem(jogada, distancia, paisesTestados)
-
-                if tentativas > 0:
-                    exibe_infos(paisesTestados, tentativas, dicas)
-                else: 
-                    statusJogando = False
+                exibe_infos(paisesTestados, tentativas, dicas)
         
         else:
             print('País desconhecido')
-            
+
+    statusJogo = reiniciar()
                 
