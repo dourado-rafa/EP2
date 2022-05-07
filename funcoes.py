@@ -117,7 +117,7 @@ def menu_dicas(infosPais, loja, tentativas, dicas):
     menu += ('0. Sem dica')
     print(menu)
 
-    lista_numeros = []
+    lista_numeros = ['0']
     numeros = '0'
     i = 1
     while i <= n:
@@ -131,13 +131,18 @@ def menu_dicas(infosPais, loja, tentativas, dicas):
         tentativas -= 4
         cor = random.choice(loja['Cor da bandeira'])
         loja['Cor da bandeira'].remove(cor)
-        dicas['Cor da bandeira'].append(cor)
+        if 'Cores da bandeira' not in dicas.keys():
+            dicas['Cores da bandeira'] = []
+        dicas['Cores da bandeira'].append(cor)
 
     elif opcoesNome[opcao] == 'Letra da capital':
         tentativas -= 3
         letra = sorteia_letra(infosPais['capital'],loja['Letra da capital'])
         loja['Letra da capital'].append(letra)
-    
+        if 'Letras da capital' not in dicas.keys():
+            dicas['Letras da capital'] = []
+        dicas['Letras da capital'].append(letra)
+            
     elif opcoesNome[opcao] == 'Área':
         tentativas -= 6
         loja['Área'] = False
@@ -172,9 +177,19 @@ def exibe_infos(paisesTestados, tentativas, dicas):
         distancia2 = f"{int(pais[1]):,}".replace(',', '.')
 
         print(f"{cor}    {distancia2} km -> {pais[0]} {cores['reset']}")
+
     print("\nDicas:")
     for dica, valor in dicas.items():
-        print(f"    {dica}: {valor}")
+        print(f"    {dica}: ", end='')
+        if dica == 'Letras da capital' or dica == 'Cores da bandeira':
+            for subvalor in valor:
+                if subvalor == valor[-1]:
+                    print(subvalor)
+                else:
+                    print(subvalor, end=", ")
+        else:
+            print(valor)
+
     if tentativas <= 10:
         corTentativa = cores['amarelo']
     elif tentativas <= 5:
@@ -182,14 +197,14 @@ def exibe_infos(paisesTestados, tentativas, dicas):
     else:
         corTentativa = cores['ciano']
 
-    print(f"\n Você tem {corTentativa}{tentativas}{cores['reset']} tentativa (s)")
+    print(f"\nVocê tem {corTentativa}{tentativas}{cores['reset']} tentativa (s)")
 
 def verifica(pergunta,respostas):
-    jogada = input(pergunta)
+    jogada = (input(pergunta)).lower()
 
     while jogada:
         if jogada in respostas:
             return jogada
         else:
             print('Resposta inválida')
-            jogada = input(pergunta)
+            jogada = (input(pergunta)).lower()
