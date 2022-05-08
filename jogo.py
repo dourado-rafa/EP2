@@ -1,17 +1,20 @@
 from funcoes import *
 from dados import *
+import os
 
 dadosPaises = normaliza(DADOS)
 statusJogo = True
 
-print(f"""
- ============================ 
+os.system('cls')
+print(f""" ============================ 
 |                            |
 | Bem-vindo ao Insper Países |
 |                            |
  ==== Design de Software ==== 
+""")
 
- Comandos:
+while statusJogo: 
+    print(f""" - Comandos:
     dica       - entra no mercado de dicas
     desisto    - desiste da rodada
     inventario - exibe sua posição
@@ -19,7 +22,6 @@ print(f"""
 Um país foi escolhido, tente adivinhar!
 Você tem {cores['ciano']}20{cores['reset']} tentativa(s)""")
 
-while statusJogo: 
     pais = sorteia_pais(dadosPaises)
     infosPais = dadosPaises[pais]
 
@@ -33,7 +35,7 @@ while statusJogo:
     while (tentativas > 0 and statusJogando):
         jogada = input('Qual seu palpite? ').lower()
 
-        if jogada == 'dica':
+        if jogada in ['dica', 'dicas']:
             dicas, tentativas, loja = menu_dicas(infosPais, loja, tentativas, dicas)
             exibe_infos(paisesTestados, tentativas, dicas)
 

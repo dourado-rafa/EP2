@@ -85,28 +85,29 @@ def menu_dicas(infosPais, loja, tentativas, dicas):
     custo = {'Letra da Capital': 3, 'Cor da Bandeira': 4, 'População': 5, 'Área': 6, 'Continente': 7}
     n = 0
     
+    print(f"\n - Mercado de Dicas\n" + "-"*43)
     for dica in loja.keys():
         if dica == 'Letra da Capital':
             if len(loja['Letra da Capital']) < len(infosPais['capital']):
                 if tentativas > 3:
                     n += 1
                     opcoesNome.append('Letra da Capital')
-                    print('1. Letra da Capital - custa 3 tentativas')
+                    print(f'1. {"Letra da Capital": <20}- custa 3 tentativas')
 
         elif dica == 'Cor da Bandeira':
             if len(loja['Cor da Bandeira']) > 0:
                 if tentativas > 4:
                     n += 1
                     opcoesNome.append('Cor da Bandeira')
-                    print('2. Cor da Bandeira  - custa 4 tentativas')
+                    print(f'2. {"Cor da Bandeira": <20}- custa 4 tentativas')
 
         else:
             if loja[dica] > 0:
                 if tentativas > custo[dica]:
                     n += 1
                     opcoesNome.append(dica)
-                    print(f'{n}. {dica}       - custa {custo[dica]} tentativas')
-    print('0. Sem dica')
+                    print(f'{n}. {dica: <20}- custa {custo[dica]} tentativas')
+    print('0. Sem dica\n' + "-"*43)
 
     lista_numeros = ['0']
     numeros = '0'
@@ -142,7 +143,7 @@ def menu_dicas(infosPais, loja, tentativas, dicas):
     return dicas,tentativas,loja
 
 def exibe_infos(paisesTestados, tentativas, dicas):
-    print("\nDistâncias:")
+    print("\n - Distâncias:")
     for pais in paisesTestados:
         distancia = int(pais[1])
         if distancia <= 1000:
@@ -157,9 +158,9 @@ def exibe_infos(paisesTestados, tentativas, dicas):
             cor = cores['vermelho']
         distancia2 = f"{int(pais[1]):,}".replace(',', '.')
 
-        print(f"{cor}    {distancia2} km -> {pais[0]} {cores['reset']}")
+        print(f"{cor}    {distancia2: >4} km -> {pais[0]} {cores['reset']}")
 
-    print("\nDicas:")
+    print("\n - Dicas:")
     for dica, valor in dicas.items():
         print(f"    {dica}: ", end='')
         if dica == 'Letras da Capital' or dica == 'Cores da Bandeira':
