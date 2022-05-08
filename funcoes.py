@@ -169,6 +169,12 @@ def exibe_infos(paisesTestados, tentativas, dicas):
                     print(subvalor)
                 else:
                     print(subvalor, end=", ")
+        elif dica == 'População':
+            habitantes = f"{int(valor):,}".replace(',', '.') + " habitantes"
+            print(habitantes)
+        elif dica == 'Área':
+            area = f"{int(valor):,}".replace(',', '.') + " km"
+            print(area)
         else:
             print(valor)
 
@@ -200,7 +206,7 @@ def desistencia(pais,statusJogando):
 
 def fim(tentativas,jogada,pais):
     if tentativas == 0 and jogada != pais:
-        print('Você perdeu :(')
+        print(f'Você perdeu :(\n O país era {pais}')
     elif tentativas == 0 and jogada == pais:
         print('Você venceu!')
     return False
@@ -209,5 +215,5 @@ def reiniciar():
     reiniciar = verifica('Você quer jogar novamente? [s/n]',['s','n'])
     statusJogo = (reiniciar == 's')
     if not statusJogo:
-        print('Até a próxima!')
+        print('\nAté a próxima!')
     return statusJogo
