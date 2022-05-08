@@ -53,7 +53,7 @@ Você tem {cores['ciano']}20{cores['reset']} tentativa(s)""")
             tentativas -= 1
 
             if tentativas == 0:
-                statusJogando = fim((tentativas,jogada,pais))
+                statusJogando = fim(tentativas,jogada,pais)
 
             elif jogada == pais:
                 print('Você venceu')
