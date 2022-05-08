@@ -208,4 +208,6 @@ def fim(tentativas,jogada,pais):
 def reiniciar():
     reiniciar = verifica('Você quer jogar novamente? [s/n]',['s','n'])
     statusJogo = (reiniciar == 's')
+    if not statusJogo:
+        print('Até a próxima!')
     return statusJogo
