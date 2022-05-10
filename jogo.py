@@ -19,7 +19,7 @@ while statusJogo:
     desisto    - desiste da rodada
     inventario - exibe sua posição
 
-Um país foi escolhido, tente adivinhar!
+Um país foi escolhido, tente adivinhar!\n
 Você tem {cores['ciano']}20{cores['reset']} tentativa(s)""")
 
     pais = sorteia_pais(dadosPaises)
@@ -46,18 +46,14 @@ Você tem {cores['ciano']}20{cores['reset']} tentativa(s)""")
             exibe_infos(paisesTestados, tentativas, dicas)
         
         elif jogada in [paisTestado[0] for paisTestado in paisesTestados]:
-            print("Você já testou esse país")
+            print("Você já testou esse país!\n")
 
         elif jogada in dadosPaises.keys():
             paisTestado = dadosPaises[jogada]
             tentativas -= 1
 
-            if tentativas == 0:
+            if tentativas == 0 or jogada == pais:
                 statusJogando = fim(tentativas,jogada,pais)
-
-            elif jogada == pais:
-                print('Você venceu')
-                statusJogando = False
 
             else:
                 distancia = haversine(infosPais, paisTestado)
@@ -65,7 +61,7 @@ Você tem {cores['ciano']}20{cores['reset']} tentativa(s)""")
                 exibe_infos(paisesTestados, tentativas, dicas)
         
         else:
-            print('País desconhecido')
+            print('País desconhecido!\n')
 
     statusJogo = reiniciar()
                 

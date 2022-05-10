@@ -3,11 +3,11 @@ import random, math
 
 cores = {'ciano': '\x1b[1;36m', 'verde': '\x1b[1;32m', 'amarelo': '\x1b[1;33m', 'magenta': '\x1b[1;35m', 'vermelho': '\x1b[1;31m', 'reset': '\x1b[0m'}
 
-def sorteia_pais(dados): #Rafa
+def sorteia_pais(dados):
     pais = random.choice(list(dados.keys()))
     return pais
 
-def normaliza(porContinente): #Bia
+def normaliza(porContinente):
     saida = {}
     for continente,paises in porContinente.items():
         for pais,info in paises.items():
@@ -15,7 +15,7 @@ def normaliza(porContinente): #Bia
             saida[pais] = info
     return saida
 
-# def haversine(r,l1, long1, l2, long2): #Bia
+# def haversine(r,l1, long1, l2, long2): 
     
 #     a = (math.sin((math.radians(l2)-math.radians(l1))/2))**2
 #     b = (math.sin((math.radians(long2)-math.radians(long1))/2))**2
@@ -23,7 +23,7 @@ def normaliza(porContinente): #Bia
 #     d = 2*r*math.asin((a+c)**(1/2))
 #     return d
 
-def haversine(pais, paisTestado): #Bia
+def haversine(pais, paisTestado):
     l1 = math.radians(paisTestado['geo']['latitude'])
     long1 = math.radians(paisTestado['geo']['longitude'])
     l2 = math.radians(pais['geo']['latitude'])
@@ -36,13 +36,13 @@ def haversine(pais, paisTestado): #Bia
     d = 2*raio*math.asin((a+c)**(1/2))
     return d
 
-def esta_na_lista(pais, lista): #Rafa
+def esta_na_lista(pais, lista):
     paises = [item[0] for item in lista]
     if pais in paises:
         return True
     return False
 
-def adiciona_em_ordem(pais, distancia, lista): #Rafa
+def adiciona_em_ordem(pais, distancia, lista):
     nova_lista = list(lista)
     nova_tentativa = [pais, distancia]
 
@@ -54,7 +54,7 @@ def adiciona_em_ordem(pais, distancia, lista): #Rafa
         nova_lista.append(nova_tentativa)
     return nova_lista
 
-def sorteia_letra(palavra, restricao): #Rafa
+def sorteia_letra(palavra, restricao):
     restricao_caracteres = ['.', ',', '-', ';', ' '] + restricao
 
     palavra_tratada = str(palavra).lower()
@@ -143,7 +143,7 @@ def menu_dicas(infosPais, loja, tentativas, dicas):
     return dicas,tentativas,loja
 
 def exibe_infos(paisesTestados, tentativas, dicas):
-    print("\n - Distâncias:")
+    print("\n" + "-"*43 + "\n - Distâncias:")
     for pais in paisesTestados:
         distancia = int(pais[1])
         if distancia <= 1000:
@@ -177,6 +177,7 @@ def exibe_infos(paisesTestados, tentativas, dicas):
             print(area)
         else:
             print(valor)
+    print("-"*43)
 
     if tentativas <= 10:
         corTentativa = cores['amarelo']
@@ -185,17 +186,15 @@ def exibe_infos(paisesTestados, tentativas, dicas):
     else:
         corTentativa = cores['ciano']
 
-    print(f"\nVocê tem {corTentativa}{tentativas}{cores['reset']} tentativa (s)")
+    print(f"Você tem {corTentativa}{tentativas}{cores['reset']} tentativa (s)\n")
 
 def verifica(pergunta,respostas):
-    jogada = (input(pergunta)).lower()
-
-    while jogada:
+    while True:
+        jogada = (input(pergunta)).lower()
         if jogada in respostas:
             return jogada
         else:
-            print('Resposta inválida')
-            jogada = (input(pergunta)).lower()
+            print('\nResposta inválida')
 
 def desistencia(pais,statusJogando):
     desistir = verifica("Tem certeza que deseja desistir da rodada? [s|n] ",['s','n'])
@@ -206,13 +205,13 @@ def desistencia(pais,statusJogando):
 
 def fim(tentativas,jogada,pais):
     if tentativas == 0 and jogada != pais:
-        print(f'Você perdeu :(\n O país era {pais}')
-    elif tentativas == 0 and jogada == pais:
-        print('Você venceu!')
+        print(f'Você perdeu :(\nO país era {pais}')
+    elif tentativas >= 0 and jogada == pais:
+        print('Você venceu! :)')
     return False
 
 def reiniciar():
-    reiniciar = verifica('Você quer jogar novamente? [s/n]',['s','n'])
+    reiniciar = verifica('Você quer jogar novamente? [s/n] ',['s','n'])
     statusJogo = (reiniciar == 's')
     if not statusJogo:
         print('\nAté a próxima!')
