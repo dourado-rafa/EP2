@@ -10,11 +10,10 @@ print(f""" ============================
 |                            |
 | Bem-vindo ao Insper Países |
 |                            |
- ==== Design de Software ==== 
-""")
+ ==== Design de Software ==== """)
 
 while statusJogo: 
-    print(f""" - Comandos:
+    print(f"""\n - Comandos:
     dica       - entra no mercado de dicas
     desisto    - desiste da rodada
     inventario - exibe sua posição
@@ -45,7 +44,7 @@ Você tem {cores['ciano']}20{cores['reset']} tentativa(s)""")
         elif jogada == 'inventario':
             exibe_infos(paisesTestados, tentativas, dicas)
         
-        elif jogada in [paisTestado[0] for paisTestado in paisesTestados]:
+        elif esta_na_lista(jogada, paisesTestados):
             print("Você já testou esse país!\n")
 
         elif jogada in dadosPaises.keys():
