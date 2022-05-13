@@ -1,9 +1,7 @@
 from funcoes import *
 from dados import *
 import os
-
 dadosPaises = normaliza(DADOS)
-statusJogo = True
 
 os.system('cls')
 print(f""" ============================ 
@@ -12,6 +10,7 @@ print(f""" ============================
 |                            |
  ==== Design de Software ==== """)
 
+statusJogo = True
 while statusJogo: 
     print(f"""\n - Comandos:
     dica       - entra no mercado de dicas
