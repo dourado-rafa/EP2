@@ -33,7 +33,7 @@ Você tem {cores['ciano']}20{cores['reset']} tentativa(s)""")
     statusJogando = True
 
     loja = montando_loja(infosPais)
-    # A função loja é utilizada para saber quais dicas o usuário nao pode mais pedir por não ter mais informações disponíveis sobre aquela categoria.
+    # A função loja é utilizada para saber quais dicas o usuário não pode mais pedir por não ter mais informações disponíveis sobre aquela categoria.
     # Não analisa o que o usuário pode pedir de acordo com o número de tentativas que ele pode gastar
 
     dicas = {} 
@@ -54,7 +54,7 @@ Você tem {cores['ciano']}20{cores['reset']} tentativa(s)""")
 
         elif jogada == 'desisto':
             statusJogando = desistencia(pais,statusJogando)
-        # a função desistência confirma se o usuário realmente deseja desistir e finaliza a rodada caso sim.
+        # a função desistencia confirma se o usuário realmente deseja desistir e finaliza a rodada caso sim.
 
         elif jogada == 'inventario':
             exibe_infos(paisesTestados, tentativas, dicas)
@@ -64,18 +64,27 @@ Você tem {cores['ciano']}20{cores['reset']} tentativa(s)""")
 
         elif jogada in dadosPaises.keys():
             paisTestado = dadosPaises[jogada]
+        # Quando o usuário testa um país que não havia sido testado os dados do país testado são armazenados
+        # em uma variável para ser feito o cáculo da distância do pais testado ao sorteado
             tentativas -= 1
 
             if tentativas == 0 or jogada == pais:
                 statusJogando = fim(tentativas,jogada,pais)
+        # O bloco confere se a rodada vai ser encerrada ou não, se o pais testado é igual ao sorteado
+        # ou se o jogador não tem mais tentativas.
+
+        # A função fim printa se o jogador venceu ou perdeu
 
             else:
                 distancia = haversine(infosPais, paisTestado)
                 paisesTestados = adiciona_em_ordem(jogada, distancia, paisesTestados)
+            # adiciona o pais testado na lista de paises testados juntamente com a sua distância ao pais sorteado.
                 exibe_infos(paisesTestados, tentativas, dicas)
         
         else:
             print('País desconhecido!\n')
 
     statusJogo = reiniciar()
+    # Quando a jogada é encerrada pergunta se o jogador quer jogar novamente e define a variável que
+    # controla o while do jogo, determinando se o jogo vai encerrar ou iniciar uma nova rodada.
                 
