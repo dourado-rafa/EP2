@@ -51,13 +51,20 @@ def adiciona_em_ordem(pais, distancia, lista): # Recebe a lista de países que j
 def sorteia_letra(palavra, restricao): # Sorteia uma letra da capital do país sorteado impondo restrições no sorteio
     restricao_caracteres = ['.', ',', '-', ';', ' '] + restricao # caracteres especiais e as letras que já foram sorteadas
 
-    palavra_tratada = str(palavra).lower()
+    palavra_tratada = palavra.lower()
     for caracter in restricao_caracteres:
         palavra_tratada = palavra_tratada.replace(caracter, "")
     if len(palavra_tratada) < 1:
         return ""
     else:
         return random.choice(list(palavra_tratada))
+
+def letras_validas_capital(capitalPais): # Determina quantas letras válidas há na capital
+    restricao_caracteres = ['.', ',', '-', ';', ' '] # caracteres especiais que não devem ser considerados
+    capitalPais_tratada = capitalPais.lower()
+    for caracter in restricao_caracteres:
+        capitalPais_tratada = capitalPais_tratada.replace(caracter, "")
+    return len(capitalPais_tratada)
 
 def verifica(pergunta, respostas): # Verifica a resposta do jogador e repete uma pergunta até que a resposta seja válida
     while True:
@@ -138,62 +145,62 @@ def menu_dicas(infosPais, loja, tentativas, dicas): # gera e controla o mercado 
     opcoesNome = ['Sem dica']
     custo = {'Letra da Capital': 3, 'Cor da Bandeira': 4, 'População': 5, 'Área': 6, 'Continente': 7} # Dicionario que possui o custo de cada dica
     n = 0 # Essa variavel será usada para definir o número que cada dica terá
-    # Esse número é alterado para que todas as dicas fiquem em ordem crescente
+    # Esse número é alterado para que todas as dicas fiquem SEMPRE em ordem crescente
     
     print(f"\n - Mercado de Dicas\n" + "-"*43)
     for dica in loja.keys():
         if dica == 'Letra da Capital':
-            if len(loja['Letra da Capital']) < len(infosPais['capital']):
-                if tentativas > 3:
-                    n += 1
-                    opcoesNome.append('Letra da Capital')
-                    print(f'1. {"Letra da Capital": <20}- custa 3 tentativas')
+            if len(loja['Letra da Capital']) < letras_validas_capital(infosPais['capital']) and tentativas > 3: 
+                # verifica se o jogador ainda pode comprar essa dica (caso especial)
+                n += 1 # coloca as dicas em ordem crescente
+                opcoesNome.append('Letra da Capital') # associa a dica ao seu número
+                print(f'{n}. {dica: <20}- custa {custo[dica]} tentativas')
 
         elif dica == 'Cor da Bandeira':
-            if len(loja['Cor da Bandeira']) > 0:
-                if tentativas > 4:
-                    n += 1
-                    opcoesNome.append('Cor da Bandeira')
-                    print(f'2. {"Cor da Bandeira": <20}- custa 4 tentativas')
+            if len(loja['Cor da Bandeira']) > 0 and tentativas > 4: 
+                # verifica se o jogador ainda pode comprar essa dica (caso especial)
+                n += 1 # coloca as dicas em ordem crescente
+                opcoesNome.append('Cor da Bandeira')
+                print(f'{n}. {dica: <20}- custa {custo[dica]} tentativas')
 
         else:
-            if loja[dica] > 0: # verifica se o jogador ainda pode comprar cada uma das dicas antes de exibi-las junto de seus custos em ordem crescente
-                if tentativas > custo[dica]:
-                    n += 1
-                    opcoesNome.append(dica)
-                    print(f'{n}. {dica: <20}- custa {custo[dica]} tentativas')
+            if loja[dica] > 0 and tentativas > custo[dica]: 
+                # verifica se o jogador ainda pode comprar cada uma das dicas antes de exibi-las junto de seus custos
+                n += 1 # coloca as dicas em ordem crescente
+                opcoesNome.append(dica) # associa a dica ao seu número
+                print(f'{n}. {dica: <20}- custa {custo[dica]} tentativas')
     print('0. Sem dica\n' + "-"*43)
 
-    lista_numeros = ['0']
-    numeros = '0'
+    listaNumeros = ['0'] # Lista de números validos que podem ser usados na compra de dicas
+    numeros = '0' # String com os números que podem ser usados na compra de dicas
     i = 1
     while i <= n:
         numeros += '|{}'.format(i)
-        lista_numeros.append(str(i))
+        listaNumeros.append(str(i))
         i += 1
 
-    opcao = int(verifica((f'Escolha sua opção [{numeros}] '),lista_numeros)) # recolhe a dica que o usuario quer comprar (verificando-a antes) 
+    opcao = int(verifica((f'Escolha sua opção [{numeros}] '), listaNumeros)) # recolhe a dica que o usuario quer comprar (verificando-a antes) 
 
     if opcoesNome[opcao] != 'Sem dica':
         tentativas -= custo[opcoesNome[opcao]]
 
-        if opcoesNome[opcao] == 'Letra da Capital':
-            letra = sorteia_letra(infosPais['capital'],loja['Letra da Capital'])
+        if opcoesNome[opcao] == 'Letra da Capital': # caso especial
+            letra = sorteia_letra(infosPais['capital'],loja['Letra da Capital']) # Sorteia uma letra da capital
             loja['Letra da Capital'].append(letra)
             if 'Letras da Capital' not in dicas.keys():
                 dicas['Letras da Capital'] = []
-            dicas['Letras da Capital'].append(letra)
+            dicas['Letras da Capital'].append(letra) # adiciona a letra sorteada a lista de letras do jogador
             
-        elif opcoesNome[opcao] == 'Cor da Bandeira':
-            cor = random.choice(loja['Cor da Bandeira'])
+        elif opcoesNome[opcao] == 'Cor da Bandeira': # caso especial
+            cor = random.choice(loja['Cor da Bandeira']) # sorteia uma cor da bandeira
             loja['Cor da Bandeira'].remove(cor)
             if 'Cores da Bandeira' not in dicas.keys():
                 dicas['Cores da Bandeira'] = []
-            dicas['Cores da Bandeira'].append(cor)
+            dicas['Cores da Bandeira'].append(cor) # adiciona a cor sorteada a lista de cores da bandeira do jogador
 
-        else:
-            loja[opcoesNome[opcao]] = 0
-            dicas[opcoesNome[opcao]] = infosPais[opcoesNome[opcao].lower()]
+        else: # casos genéricos
+            loja[opcoesNome[opcao]] = 0 # uma vez comprada essa dica n pode ser comprada novamente 
+            dicas[opcoesNome[opcao]] = infosPais[opcoesNome[opcao].lower()] # recolhe o valor da dica dos dados e o adiciona a lista de dicas do jogador
     
     return dicas, tentativas, loja
 
