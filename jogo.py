@@ -33,8 +33,8 @@ Você tem {cores['ciano']}20{cores['reset']} tentativa(s)""")
     statusJogando = True
 
     loja = montando_loja(infosPais)
-    # A função loja é utilizada para saber quais dicas o usuário não pode mais pedir por não ter mais informações disponíveis sobre aquela categoria.
-    # Não analisa o que o usuário pode pedir de acordo com o número de tentativas que ele pode gastar
+    # A função loja é utilizada para armazenar informações de cada categoria de dica,
+    # as quais serão utilizadas para saber quais categorias ainda têm informações novas para exibir.
 
     dicas = {} 
     # O dicionário dica guarda as informações já obtidas pelo usuário
